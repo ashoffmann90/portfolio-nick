@@ -129,19 +129,52 @@ table {
 body {
   background: black;
 }
-header h1 {
+.nav-div header {
+  margin: 1% 0;
+}
+.nav-div header h1 {
   font-size: 5rem;
   text-align: center;
-  color: purple;
+  color: grey;
 }
-header nav {
+.nav-div header nav {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-header nav a {
+.nav-div header nav a {
   font-size: 2rem;
   text-decoration: none;
   color: forestgreen;
+}
+.videos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: direction;
+  justify-content: space-around;
+  align-items: align;
+}
+.me {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: direction;
+  justify-content: space-around;
+  align-items: align;
+  margin: 0 10%;
+  color: white;
+  font-size: 1.2rem;
+}
+.me .bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: direction;
+  justify-content: space-around;
+  align-items: align;
+  margin: 5% 0;
+}
+.me .gear h2 {
+  font-size: 2rem;
+  font-weight: 500;
 }
