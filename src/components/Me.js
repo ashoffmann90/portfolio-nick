@@ -14,6 +14,7 @@ function Me() {
     return (
         <div className='me'>
             <div className='bio'>
+                <h2>Bio</h2>
                 <p>
                 Nick discovered his passion for film during his freshman year of high school in his hometown, Santa Barbara. It all began with a camcorder his mom gave him for his birthday and since then, he hasn’t stopped filming. He currently resides in Los Angeles where he graduated from California State University Northridge with a degree in Cinema and Television Arts. After graduating, he spent the first two years working as a P.A. for various reality TV Shows. Shortly after that, he transitioned into the Steadicam operator that he is today!
                 </p>
@@ -22,11 +23,17 @@ function Me() {
                 </p>
             </div>
 
+            <div className='vertical-line'>
+
+            </div>
+
             <div className='gear'>
-                <h2>His Steadicam Kit Includes:</h2>
+                <h2>His Steadicam Kit:</h2>
+                <ul>
                 {gearList.map(gear => 
-                    <p>{gear}</p>    
+                    <li>{gear}</li>    
                 )}
+                </ul>
             </div>
             
         </div>
