@@ -43,7 +43,7 @@ function Videos() {
     return (
         <div className='videos-grid'>
             {videos.map(video => 
-                <ReactPlayer url={video.url} />
+                <ReactPlayer url={video.url} controls={true} />
             )}
         </div>
     )
