@@ -139,6 +139,16 @@ body {
   overflow-x: hidden;
   overflow-y: overlay;
 }
+body p {
+  color: #d6e7eb;
+}
+body h1,
+body h2 {
+  color: grey;
+}
+body a {
+  color: #549254;
+}
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   background-color: #F5F5F5;
@@ -153,6 +163,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #FFF;
   background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(0.6, #86e08c));
 }
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .nav-div header {
   margin: 1% 0;
   display: flex;
@@ -164,7 +183,6 @@ body::-webkit-scrollbar-thumb {
 .nav-div header h1 {
   font-size: 3.5rem;
   text-align: center;
-  color: grey;
 }
 .nav-div header nav {
   width: 70%;
@@ -177,7 +195,6 @@ body::-webkit-scrollbar-thumb {
 .nav-div header nav a {
   font-size: 2rem;
   text-decoration: none;
-  color: #549254;
 }
 .videos-grid {
   display: flex;
