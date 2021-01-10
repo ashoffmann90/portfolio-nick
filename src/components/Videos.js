@@ -42,8 +42,8 @@ function Videos() {
 
     return (
         <div className='videos-grid'>
-            {videos.map(video => 
-                <ReactPlayer url={video.url} controls={true} />
+            {videos.map((video, index) => 
+                <ReactPlayer key={index} url={video.url} controls={true} />
             )}
         </div>
     )

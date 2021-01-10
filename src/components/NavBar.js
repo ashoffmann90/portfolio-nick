@@ -7,7 +7,7 @@ function NavBar() {
             <header>
                 <h1>Nick Almanza</h1>
                 <nav>
-                    <NavLink to='/home'>Home</NavLink>
+                    <NavLink to='/'>Home</NavLink>
                     <NavLink to='/videos'>Videos</NavLink>
                     <NavLink to='/bts'>Behind the Scenes</NavLink>
                     <NavLink to='/me'>Me</NavLink>
