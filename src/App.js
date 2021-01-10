@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import NavBar from './components/NavBar'
 import Home from './components/Home'
@@ -11,6 +12,7 @@ import BehindTheScenes from './components/BehindTheScenes'
 function App() {
   return (
     <div>
+      <Router>
       <NavBar/>
       <Route exact path='/'>
         <Home/>
@@ -27,6 +29,7 @@ function App() {
       <Route exact path='/behindthescenes'>
         <BehindTheScenes/>
       </Route>
+      </Router>
     </div>
   );
 }
