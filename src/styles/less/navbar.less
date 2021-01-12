@@ -1,18 +1,28 @@
 .nav-div{
     
     header {
-        margin: 1% 0;
+        margin: 2% 0;
         .flex(@justify: space-between, @align: baseline);
         
-        h1{
-            font-size: 3.5rem;
-            text-align: center;
+        .name-title-wrapper{
+            .flex(column, nowrap, center, center);
+
+            h1{
+                font-size: 3.5rem;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 1.5rem;
+            }
         }
         nav{
-            width: 70%;
-            .flex(@justify: space-around);
+            margin-left: 3%;
+            width: 65%;
+            .flex(@justify: space-between);
             
             a{
+                letter-spacing: .1rem;
                 font-size: 2rem;
                 text-decoration: none;
             }
