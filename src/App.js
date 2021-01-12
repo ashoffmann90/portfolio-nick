@@ -3,8 +3,8 @@ import { Route } from 'react-router';
 import { BrowserRouter as Router } from 'react-router-dom';
 import {createGlobalStyle} from 'styled-components'
 
-import AnotherFlight from './assets/fonts/Another Flight.otf'
-import Basicaline from './assets/fonts/Basicaline-NonCommercial.otf'
+import AnotherFlight from './assets/fonts/Another Flight.ttf'
+import Basicaline from './assets/fonts/BasicalineRegular.ttf'
 
 import NavBar from './components/NavBar'
 import Home from './components/Home'
@@ -19,7 +19,11 @@ const GlobalStyle = createGlobalStyle`
 }
 @font-face{
   font-family: 'Basicaline';
-  src: local('Basicaline-NonCommercial'), local('Basicaline NonCommercial'), local('Basicaline-Non Commercial'), url('${Basicaline}') format('opentype')
+    src: local('Basicaline'), local('BasicalineRegular'),
+        url('${Basicaline}') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 p, li{
