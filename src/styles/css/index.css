@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Another Flight';
-  src: local('Another Flight'), url('../../assets/fonts/Another\ Flight.otf') format('opentype');
+  src: local('Another Flight'), local('AnotherFlight'), url('../../assets/fonts/Another\ Flight.otf') format('opentype');
 }
 @font-face {
   font-family: 'Basicaline';
-  src: local('Basicaline'), url('../../assets/fonts/Basicaline-NonCommercial.otf') format('opentype');
+  src: local('Basicaline-NonCommercial'), local('Basicaline NonCommercial'), local('Basicaline-Non Commercial'), url('../../assets/fonts/Basicaline-NonCommercial.otf') format('opentype');
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
