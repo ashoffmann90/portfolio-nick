@@ -1,10 +1,61 @@
 .player-wrapper {
     position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
-  }
-  
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+        
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.home-container{
+    // .flex(column, nowrap, center, flex-start);
+    display:flex;
+    flex-direction: column;
+
+    
+
+    .me{
+        .flex(row, nowrap, space-around, flex-start);
+        color: @font-color;
+        border-bottom: 3px solid @border-color;
+    
+        .portrait-margin{
+            margin-top: 10%;
+
+            .self-portrait {
+                width: 30vw;
+                height: auto;
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    
+        .bio{
+            .flex(direction, wrap, space-around, align);
+            margin: 0 auto;
+            width: 40%;
+            
+            h2{
+                margin: 50px auto;
+            }
+
+            p{
+                align-self: flex-start;
+                line-height: 1.7rem;
+            }
+        }
+    }
+    .gear{
+        margin: 5% auto;
+        width: 30%;
+
+        li{
+            margin: 2% 0;
+        }
+    }
+}

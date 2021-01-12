@@ -41,9 +41,9 @@ function Videos() {
     ]
 
     return (
-        <div className='videos-grid'>
+        <div className='player-wrapper'>
             {videos.map((video, index) => 
-                <ReactPlayer key={index} url={video.url} controls={true} />
+                <ReactPlayer key={index} className='react-player' url={video.url} controls={true} playing={false} width='100%' height='100%'/>
             )}
         </div>
     )

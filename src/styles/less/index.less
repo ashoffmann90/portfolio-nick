@@ -1,13 +1,21 @@
 // watch compiler
 // npx less-watch-compiler src/styles/less src/styles/css index.less
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@font-face{
+    font-family: 'Another Flight';
+    src: local('Another Flight'), url('../../assets/fonts/Another\ Flight.otf') format('opentype');
+  }
+@font-face{
+    font-family: 'Basicaline';
+    src: local('Basicaline'), url('../../assets/fonts/Basicaline-NonCommercial.otf') format('opentype')
+}
+
 
 @import 'variables';
 @import 'mixins';
 @import 'reset';
 @import 'global';
 
-@import 'home';
 @import 'navbar';
+@import 'home';
 @import 'videos';
-@import 'me';
+@import 'behindthescenes';
