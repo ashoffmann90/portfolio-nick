@@ -25,17 +25,26 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
 }
+@font-face{
+  font-family: 'Big Shoulders Text';
+}
+@font-face{
+  font-family: 'Pompiere';
+}
+@font-face{
+  font-family: 'Gruppo';
+}
 
 p, li{
-  font-family: @header-font;
+  font-family: @header-font, 'Big Shoulders Text';
 }
 
 h1, h2{
-  font-family: @header-font;
+  font-family: @header-font, 'Pompiere';
 }
 
 a{
-  font-family: @text-font;
+  font-family: @text-font, 'Big Shoulders Text';
 }
 `
 

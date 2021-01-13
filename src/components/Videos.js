@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from "react-player"
 
-
 function Videos() {
     const videos = [
         {
@@ -42,8 +41,14 @@ function Videos() {
 
     return (
         <div className='player-wrapper'>
-            {videos.map((video, index) => 
-                <ReactPlayer key={index} className='react-player' url={video.url} controls={true} playing={false} width='100%' height='100%'/>
+            {videos.map((video, index) =>
+                <ReactPlayer 
+                className='react-player'
+                url={video.url} 
+                key={index} 
+                controls={true} 
+                width='48%'
+                 />
             )}
         </div>
     )
