@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Big Shoulders Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bigshoulderstext/v4/55xxezRtP9G3CGPIf49hxc8P0eytUxBsnA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pompiere';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pompiere/v10/VEMyRoxis5Dwuyeov6Wt.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gruppo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gruppo/v11/WwkfxPmzE06v_ZWFWQ.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,7 +149,7 @@ table {
 }
 body {
   background: #0a0a0a;
-  margin: 0 10%;
+  margin: 0 8%;
   overflow-x: hidden;
   overflow-y: overlay;
 }
@@ -136,18 +157,18 @@ body p,
 body li {
   letter-spacing: 0.1rem;
   font-size: 1.7rem;
-  font-family: 'Basicaline', 'Arial';
+  font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: #d6e7eb;
 }
 body h1,
 body h2 {
-  font-family: 'Basicaline', 'Arial';
+  font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: white;
   font-size: 2.5rem;
   font-weight: 700;
 }
 body a {
-  font-family: 'Another Flight', 'Arial';
+  font-family: 'Another Flight', 'Pompiere', 'Arial';
   color: #d6e7eb;
   font-weight: 700;
 }
@@ -168,15 +189,15 @@ body::-webkit-scrollbar-thumb {
 .nav-div header {
   margin: 2% 0;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
 }
 .nav-div header .name-title-wrapper {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -191,8 +212,8 @@ body::-webkit-scrollbar-thumb {
   margin-left: 3%;
   width: 65%;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -201,12 +222,11 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem;
   text-decoration: none;
 }
-.player-wrapper {
+.player-wrapper-home {
   position: relative;
-  padding-top: 56.25%;
-  /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */;
 }
-.player-wrapper .react-player {
+.react-player-home {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,8 +237,8 @@ body::-webkit-scrollbar-thumb {
 }
 .home-container .me {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
   color: #d6e7eb;
@@ -237,8 +257,8 @@ body::-webkit-scrollbar-thumb {
 }
 .home-container .me .bio {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: direction;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: align;
   margin: 0 auto;
@@ -260,16 +280,11 @@ body::-webkit-scrollbar-thumb {
 }
 .player-wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: align;
-  position: relative;
-  padding-top: 56.25%;
-  /* Player ratio: 100 / (1280 / 720) */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .player-wrapper .react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 0 1%;
 }
