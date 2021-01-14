@@ -1,3 +1,4 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 @font-face {
   font-family: 'Big Shoulders Text';
   font-style: normal;
@@ -287,4 +288,15 @@ body::-webkit-scrollbar-thumb {
 }
 .player-wrapper .react-player {
   margin: 0 1%;
+}
+.bts-container {
+  width: 100%;
+}
+.bts-container .bts-pics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: align;
+  width: 100%;
 }
