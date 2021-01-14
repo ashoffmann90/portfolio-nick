@@ -59,7 +59,14 @@ function Contact() {
             message: message
         }
 
-        emailjs.send('service_tqa93ef', 'template_5s1v25l', template, 'user_FWkiJYYWU8aGVriYs6ikI');
+        emailjs.send('service_2h9efny', 'template_0s94nmj', template, 'user_Sgv7C27nsh1f1dYWCCetb')
+            .then(function(response) {
+            alert('Message Successfully Sent!')
+            console.log('SUCCESS!', response.status, response.text);
+         }, function(error) {
+            alert('Message Not Sent, Check Information')
+            console.log('FAILED...', error);
+         });
     }
 
     return (

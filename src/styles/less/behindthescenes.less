@@ -1,9 +1,30 @@
 .bts-container{
+    .flex(row, nowrap, space-between, flex-start);
     width: 100%;
 
+
+    .bts-content-container{
+        .flex(column, nowrap, center, center);
+        width: 50%;
+
+        h2{
+            margin: 0 2% 0;
+        }
+    }
     .bts-pics{
         .flex(row, wrap, center, align);
         width: 100%;
 
+        img{
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            margin: 0 2% 2%;
+        }
+    }
+
+    .bts-vids{
+        .flex(row, wrap, center, align);
+        width: 100%;
     }
 }
