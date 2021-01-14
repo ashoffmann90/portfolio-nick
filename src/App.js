@@ -64,7 +64,7 @@ function App() {
       <Route exact path='/contact'>
         <Contact/>
       </Route>
-      <Route exact path='/behindthescenes'>
+      <Route exact path='/bts'>
         <BehindTheScenes/>
       </Route>
       </Router>
