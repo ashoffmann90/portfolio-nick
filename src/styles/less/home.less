@@ -22,6 +22,10 @@
         .portrait-margin{
             margin-top: 10%;
 
+            @media only screen and (max-width: 800px) {
+                display: none
+            }
+
             .self-portrait {
                 width: 30vw;
                 height: auto;
@@ -36,21 +40,26 @@
         .bio{
             .flex(direction, wrap, space-around, align);
             margin: 0 auto;
-            width: 40%;
+            width: 50%;
+
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+            }
             
             h2{
-                margin: 50px auto;
+                margin: 5% auto;
             }
 
             p{
                 align-self: flex-start;
                 line-height: 1.7rem;
+                margin-bottom: 5%;
             }
         }
     }
     .gear{
         margin: 5% auto;
-        width: 30%;
+        width: 100%;
 
         li{
             margin: 2% 0;

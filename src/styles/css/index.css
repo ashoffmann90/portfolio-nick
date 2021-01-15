@@ -148,7 +148,7 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #0a0a0a;
+  background: black;
   margin: 0 8%;
   overflow-x: hidden;
   overflow-y: overlay;
@@ -195,7 +195,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .nav-div header .name-title-wrapper {
   display: flex;
@@ -203,13 +203,13 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  margin-right: 5%;
 }
-.nav-div header .name-title-wrapper h1 {
-  font-size: 3.5rem;
-  text-align: center;
-}
-.nav-div header .name-title-wrapper h2 {
-  font-size: 1.5rem;
+.nav-div header .name-title-wrapper img {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
 }
 .nav-div header nav {
   margin-left: 3%;
@@ -224,6 +224,11 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.1rem;
   font-size: 2rem;
   text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+  .nav-div header nav a {
+    font-size: 1.5rem;
+  }
 }
 .player-wrapper-home {
   position: relative;
@@ -250,6 +255,11 @@ body::-webkit-scrollbar-thumb {
 .home-container .me .portrait-margin {
   margin-top: 10%;
 }
+@media only screen and (max-width: 800px) {
+  .home-container .me .portrait-margin {
+    display: none;
+  }
+}
 .home-container .me .portrait-margin .self-portrait {
   width: 30vw;
   height: auto;
@@ -265,18 +275,24 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   align-items: align;
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .home-container .me .bio {
+    width: 100%;
+  }
 }
 .home-container .me .bio h2 {
-  margin: 50px auto;
+  margin: 5% auto;
 }
 .home-container .me .bio p {
   align-self: flex-start;
   line-height: 1.7rem;
+  margin-bottom: 5%;
 }
 .home-container .gear {
   margin: 5% auto;
-  width: 30%;
+  width: 100%;
 }
 .home-container .gear li {
   margin: 2% 0;
