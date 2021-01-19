@@ -1,14 +1,12 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 
-import logo from '../assets/nick-bts-images/Name_Title.jpg'
-
 function NavBar() {
     return (
         <div className='nav-div'>
             <header>
                 <div className='name-title-wrapper'>
-                    <NavLink to='/'><img src={logo} alt='Nick Almanza Filmmaker/Steadycam Operator'/></NavLink>
+                    <NavLink to='/'><img src='https://nick-portfolio.s3-us-west-2.amazonaws.com/Name_Title.jpg' alt='Nick Almanza Filmmaker/Steadycam Operator'/></NavLink>
                 </div>
                 
                 <nav>

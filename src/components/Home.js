@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactPlayer from "react-player"
 
-import portrait from '../assets/nick-bts-images/Self Portrait.jpg'
-
 function Home() {
     const gearList = [
         'GPI Pro Sled (Cine Live)',
@@ -27,7 +25,7 @@ function Home() {
 
                 <div className='portrait-margin'>
                     <div className='self-portrait'>
-                        <img src={portrait} alt='Self portrait of Nick Almanza'/>
+                        <img src='https://nick-portfolio.s3-us-west-2.amazonaws.com/Self+Portrait.jpg' alt='Self portrait of Nick Almanza'/>
                     </div>
                 </div>
 

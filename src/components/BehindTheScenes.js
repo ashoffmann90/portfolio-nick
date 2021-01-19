@@ -1,42 +1,65 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import image1 from '../assets/nick-bts-images/001.jpg'
-import image2 from '../assets/nick-bts-images/002.jpg'
-import image3 from '../assets/nick-bts-images/003.jpg'
-import image5 from '../assets/nick-bts-images/005.jpg'
-import image6 from '../assets/nick-bts-images/006.jpg'
-import image7 from '../assets/nick-bts-images/007.jpg'
-import image8 from '../assets/nick-bts-images/008.jpg'
-import image9 from '../assets/nick-bts-images/009.jpg'
-import image10 from '../assets/nick-bts-images/010.jpg'
-import image11 from '../assets/nick-bts-images/011.JPG'
-import image12 from '../assets/nick-bts-images/012.JPG'
-import image13 from '../assets/nick-bts-images/013.JPG'
-import image14 from '../assets/nick-bts-images/014.JPG'
-import image15 from '../assets/nick-bts-images/015.JPG'
-// import images from './images.js'
 
 function BehindTheScenes() {
+
+    const imgArray = [
+        {
+            id: 1, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/001.jpg'
+        },{
+            id: 2, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/002.jpg'
+        },{
+            id: 3, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/003.jpg'
+        },{
+            id: 5, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/005.jpg'
+        },{
+            id: 6, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/006.jpg'
+        },{
+            id: 7, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/007.jpg'
+        },{
+            id: 8, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/008.jpg'
+        },{
+            id: 9, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/009.jpg'
+        },{
+            id: 10, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/010.jpg'
+        },{
+            id: 11, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/011.JPG'
+        },{
+            id: 12, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/012.JPG'
+        },{
+            id: 13, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG'
+        },{
+            id: 14, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG'
+        },{
+            id: 15, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG'
+        },{
+            id: 16, 
+            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
+        }
+    ]
 
     return (
         <div className='bts-container'>
             <div className='bts-content-container'>
                 <h2>Photos</h2>
                 <div className='bts-pics'>
-                    <img src={image1} alt='blah' />
-                    <img src={image2} alt='x' />
-                    <img src={image3} alt='x' />
-                    <img src={image5} alt='x' />
-                    <img src={image6} alt='x' />
-                    <img src={image7} alt='x' />
-                    <img src={image8} alt='x' />
-                    <img src={image9} alt='x' />
-                    <img src={image10} alt='x' />
-                    <img src={image11} alt='x' />
-                    <img src={image12} alt='x' />
-                    <img src={image13} alt='x' />
-                    <img src={image14} alt='x' />
-                    <img src={image15} alt='x' />
+                    {imgArray.map(pic => 
+                        <img src={pic.src} alt='x'/>
+                        )}
                 </div>
             </div>
 
