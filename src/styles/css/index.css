@@ -149,14 +149,14 @@ table {
 }
 body {
   background: black;
-  margin: 0 8%;
+  margin: 0 0;
   overflow-x: hidden;
   overflow-y: overlay;
 }
 body p,
 body li {
   letter-spacing: 0.1rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: #d6e7eb;
 }
@@ -164,7 +164,7 @@ body h1,
 body h2 {
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 body a {
@@ -187,6 +187,7 @@ body::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(0.6, #86e08c));
 }
 .nav-div {
+  margin: 0 8%;
   margin-bottom: 4%;
 }
 .nav-div header {
@@ -242,6 +243,7 @@ body::-webkit-scrollbar-thumb {
 .home-container {
   display: flex;
   flex-direction: column;
+  margin: 0 8%;
 }
 .home-container .me {
   display: flex;
@@ -250,6 +252,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   align-items: flex-start;
   color: #d6e7eb;
+  padding-bottom: 5%;
   border-bottom: 3px solid white;
 }
 .home-container .me .portrait-margin {
@@ -261,21 +264,22 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .home-container .me .portrait-margin .self-portrait {
-  width: 30vw;
+  width: 325px;
   height: auto;
 }
 .home-container .me .portrait-margin .self-portrait img {
   width: 100%;
   height: auto;
+  margin-bottom: 5%;
 }
 .home-container .me .bio {
   display: flex;
   flex-direction: direction;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: align;
-  margin: 0 auto;
-  width: 50%;
+  margin: 7% 0 0 2% ;
+  width: 65%;
 }
 @media only screen and (max-width: 800px) {
   .home-container .me .bio {
@@ -305,7 +309,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .player-wrapper .react-player {
-  margin: 0 1%;
+  margin: 1% 1%;
 }
 .bts-container {
   display: flex;
@@ -314,6 +318,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-top: 6%;
 }
 .bts-container .bts-content-container {
   display: flex;
@@ -324,7 +329,7 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
 }
 .bts-container .bts-content-container h2 {
-  margin: 0 2% 0;
+  margin-bottom: 4%;
 }
 .bts-container .bts-pics {
   display: flex;
@@ -346,5 +351,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: center;
   align-items: align;
-  width: 100%;
+}
+.bts-container .bts-vids .bts-vid {
+  margin: 0 2% 2% 2%;
 }
