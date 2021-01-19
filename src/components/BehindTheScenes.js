@@ -44,7 +44,7 @@ function BehindTheScenes() {
                 <h2>Videos</h2>
                 <div className='bts-vids'>
                     <ReactPlayer className='bts-vid' url='https://youtu.be/sqKebZMCKN8' controls={true} width='45%' />
-                    <ReactPlayer className='bts-vid' url url='https://youtu.be/sqKebZMCKN8' controls={true} width='45%' />
+                    <ReactPlayer className='bts-vid' url='https://youtu.be/2Z31QMA1H6g' controls={true} width='45%' />
                 </div>
             </div>
         </div>

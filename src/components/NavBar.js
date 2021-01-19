@@ -8,7 +8,7 @@ function NavBar() {
         <div className='nav-div'>
             <header>
                 <div className='name-title-wrapper'>
-                    <img src={logo} alt='Nick Almanza Filmmaker/Steadycam Operator'/>
+                    <NavLink to='/'><img src={logo} alt='Nick Almanza Filmmaker/Steadycam Operator'/></NavLink>
                 </div>
                 
                 <nav>

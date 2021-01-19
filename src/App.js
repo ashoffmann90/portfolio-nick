@@ -11,6 +11,7 @@ import Home from './components/Home'
 import Videos from './components/Videos'
 import Contact from './components/Contact'
 import BehindTheScenes from './components/BehindTheScenes'
+import Footer from './components/Footer'
 
 const GlobalStyle = createGlobalStyle`
 @font-face{
@@ -67,6 +68,7 @@ function App() {
       <Route exact path='/bts'>
         <BehindTheScenes/>
       </Route>
+      <Footer/>
       </Router>
     </div>
   );
