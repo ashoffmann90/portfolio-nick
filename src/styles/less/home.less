@@ -13,44 +13,56 @@
     // .flex(column, nowrap, center, flex-start);
     display:flex;
     flex-direction: column;
+    margin: 0 8%;
 
     .me{
         .flex(row, nowrap, space-around, flex-start);
         color: @font-color;
+        padding-bottom: 5%;
         border-bottom: 3px solid @border-color;
     
         .portrait-margin{
             margin-top: 10%;
 
+            @media only screen and (max-width: 800px) {
+                display: none
+            }
+
             .self-portrait {
-                width: 30vw;
+                width: 325px;
                 height: auto;
     
                 img{
                     width: 100%;
                     height: auto;
+                    margin-bottom: 5%;
                 }
             }
         }
     
         .bio{
-            .flex(direction, wrap, space-around, align);
-            margin: 0 auto;
-            width: 40%;
+            .flex(direction, wrap, space-between, align);
+            margin: 7% 0 0 2% ;
+            width: 65%;
+
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+            }
             
             h2{
-                margin: 50px auto;
+                margin: 5% auto;
             }
 
             p{
                 align-self: flex-start;
                 line-height: 1.7rem;
+                margin-bottom: 5%;
             }
         }
     }
     .gear{
         margin: 5% auto;
-        width: 30%;
+        width: 100%;
 
         li{
             margin: 2% 0;

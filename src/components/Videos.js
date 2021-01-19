@@ -47,7 +47,9 @@ function Videos() {
                 url={video.url} 
                 key={index} 
                 controls={true} 
-                width='48%'
+                volume='null' 
+                muted={true}
+                width='30%'
                  />
             )}
         </div>

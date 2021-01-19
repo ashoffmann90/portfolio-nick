@@ -148,15 +148,15 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #0a0a0a;
-  margin: 0 8%;
+  background: black;
+  margin: 0 0;
   overflow-x: hidden;
   overflow-y: overlay;
 }
 body p,
 body li {
   letter-spacing: 0.1rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: #d6e7eb;
 }
@@ -164,7 +164,7 @@ body h1,
 body h2 {
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 body a {
@@ -187,6 +187,7 @@ body::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(0.6, #86e08c));
 }
 .nav-div {
+  margin: 0 8%;
   margin-bottom: 4%;
 }
 .nav-div header {
@@ -195,7 +196,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .nav-div header .name-title-wrapper {
   display: flex;
@@ -203,13 +204,13 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  margin-right: 5%;
 }
-.nav-div header .name-title-wrapper h1 {
-  font-size: 3.5rem;
-  text-align: center;
-}
-.nav-div header .name-title-wrapper h2 {
-  font-size: 1.5rem;
+.nav-div header .name-title-wrapper img {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
 }
 .nav-div header nav {
   margin-left: 3%;
@@ -225,6 +226,11 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem;
   text-decoration: none;
 }
+@media only screen and (max-width: 800px) {
+  .nav-div header nav a {
+    font-size: 1.5rem;
+  }
+}
 .player-wrapper-home {
   position: relative;
   padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */;
@@ -237,6 +243,7 @@ body::-webkit-scrollbar-thumb {
 .home-container {
   display: flex;
   flex-direction: column;
+  margin: 0 8%;
 }
 .home-container .me {
   display: flex;
@@ -245,38 +252,51 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   align-items: flex-start;
   color: #d6e7eb;
+  padding-bottom: 5%;
   border-bottom: 3px solid white;
 }
 .home-container .me .portrait-margin {
   margin-top: 10%;
 }
+@media only screen and (max-width: 800px) {
+  .home-container .me .portrait-margin {
+    display: none;
+  }
+}
 .home-container .me .portrait-margin .self-portrait {
-  width: 30vw;
+  width: 325px;
   height: auto;
 }
 .home-container .me .portrait-margin .self-portrait img {
   width: 100%;
   height: auto;
+  margin-bottom: 5%;
 }
 .home-container .me .bio {
   display: flex;
   flex-direction: direction;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: align;
-  margin: 0 auto;
-  width: 40%;
+  margin: 7% 0 0 2% ;
+  width: 65%;
+}
+@media only screen and (max-width: 800px) {
+  .home-container .me .bio {
+    width: 100%;
+  }
 }
 .home-container .me .bio h2 {
-  margin: 50px auto;
+  margin: 5% auto;
 }
 .home-container .me .bio p {
   align-self: flex-start;
   line-height: 1.7rem;
+  margin-bottom: 5%;
 }
 .home-container .gear {
   margin: 5% auto;
-  width: 30%;
+  width: 100%;
 }
 .home-container .gear li {
   margin: 2% 0;
@@ -289,7 +309,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .player-wrapper .react-player {
-  margin: 0 1%;
+  margin: 1% 1%;
 }
 .bts-container {
   display: flex;
@@ -298,6 +318,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-top: 6%;
 }
 .bts-container .bts-content-container {
   display: flex;
@@ -308,7 +329,7 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
 }
 .bts-container .bts-content-container h2 {
-  margin: 0 2% 0;
+  margin-bottom: 4%;
 }
 .bts-container .bts-pics {
   display: flex;
@@ -330,5 +351,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: center;
   align-items: align;
-  width: 100%;
+}
+.bts-container .bts-vids .bts-vid {
+  margin: 0 2% 2% 2%;
 }

@@ -1,20 +1,20 @@
 .nav-div{
+    margin: 0 8%;
     margin-bottom: 4%;
     
     header {
         margin: 2% 0;
-        .flex(@justify: space-between, @align: baseline);
+        .flex(@justify: space-between, @align: center);
         
         .name-title-wrapper{
             .flex(column, nowrap, center, center);
+            width: 30%;
+            margin-right: 5%;
 
-            h1{
-                font-size: 3.5rem;
-                text-align: center;
-            }
-
-            h2{
-                font-size: 1.5rem;
+            img{
+                object-fit: scale-down;
+                width: 100%;
+                height:auto;
             }
         }
         nav{
@@ -26,6 +26,10 @@
                 letter-spacing: .1rem;
                 font-size: 2rem;
                 text-decoration: none;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
