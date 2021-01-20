@@ -1,56 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactPlayer from 'react-player'
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; 
 
 function BehindTheScenes() {
 
+    const [isOpen, setIsOpen] = useState(false)
+    const [photoIndex, setPhotoIndex] = useState()
+
     const imgArray = [
-        {
-            id: 1, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/001.jpg'
-        },{
-            id: 2, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/002.jpg'
-        },{
-            id: 3, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/003.jpg'
-        },{
-            id: 5, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/005.jpg'
-        },{
-            id: 6, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/006.jpg'
-        },{
-            id: 7, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/007.jpg'
-        },{
-            id: 8, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/008.jpg'
-        },{
-            id: 9, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/009.jpg'
-        },{
-            id: 10, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/010.jpg'
-        },{
-            id: 11, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/011.JPG'
-        },{
-            id: 12, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/012.JPG'
-        },{
-            id: 13, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG'
-        },{
-            id: 14, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG'
-        },{
-            id: 15, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG'
-        },{
-            id: 16, 
-            src: 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
-        }
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/001.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/002.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/003.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/005.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/006.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/007.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/008.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/009.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/010.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/011.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/012.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
     ]
+
+    const onClick = e => {
+        setIsOpen(true)
+        setPhotoIndex(imgArray.indexOf(e.target.currentSrc))
+    }    
 
     return (
         <div className='bts-container'>
@@ -58,10 +37,29 @@ function BehindTheScenes() {
                 <h2>Photos</h2>
                 <div className='bts-pics'>
                     {imgArray.map(pic => 
-                        <img src={pic.src} alt='x'/>
+                        <img src={pic} alt='x' onClick={onClick}/>
                         )}
                 </div>
             </div>
+
+            {isOpen && (
+                <Lightbox
+                  mainSrc={imgArray[photoIndex]}
+                  nextSrc={imgArray[(photoIndex + 1) % imgArray.length]}
+                  prevSrc={imgArray[(photoIndex + imgArray.length - 1) % imgArray.length]   }
+                  onCloseRequest={() => setIsOpen( false )}
+                  onMovePrevRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + imgArray.length - 1) % imgArray.length,
+                    )
+                  }
+                  onMoveNextRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + 1) % imgArray.length,
+                    )
+                  }
+                />
+            )}
 
             <div className='bts-content-container'>
                 <h2>Videos</h2>
