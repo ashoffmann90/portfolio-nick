@@ -372,6 +372,10 @@ body::-webkit-scrollbar-thumb {
   width: 45%;
   margin: 1.5%;
 }
+.footer-container .footer-sections p {
+  font-size: 1rem;
+  margin-bottom: 1%;
+}
 .footer-container .footer-sections .social-icons {
   width: 25%;
   display: flex;
