@@ -149,7 +149,7 @@ table {
 }
 body {
   background: black;
-  margin: 0 0;
+  margin: 0 auto;
   overflow-x: hidden;
   overflow-y: overlay;
 }
@@ -160,12 +160,24 @@ body li {
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: #d6e7eb;
 }
+@media only screen and (max-width: 500px) {
+  body p,
+  body li {
+    font-size: 1rem;
+  }
+}
 body h1,
 body h2 {
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   color: white;
   font-size: 2rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 500px) {
+  body h1,
+  body h2 {
+    font-size: 1.5rem;
+  }
 }
 body a {
   font-family: 'Another Flight', 'Pompiere', 'Arial';
@@ -198,6 +210,15 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  .nav-div header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .nav-div header .name-title-wrapper {
   display: flex;
   flex-direction: column;
@@ -205,7 +226,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   width: 30%;
-  margin-right: 5%;
+}
+@media only screen and (max-width: 500px) {
+  .nav-div header .name-title-wrapper {
+    width: 50%;
+  }
 }
 .nav-div header .name-title-wrapper img {
   object-fit: scale-down;
@@ -213,13 +238,18 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 .nav-div header nav {
-  margin-left: 3%;
   width: 65%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .nav-div header nav {
+    width: 100%;
+    margin-top: 3%;
+  }
 }
 .nav-div header nav a {
   letter-spacing: 0.1rem;
@@ -258,7 +288,7 @@ body::-webkit-scrollbar-thumb {
 .home-container .me .portrait-margin {
   margin-top: 10%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .home-container .me .portrait-margin {
     display: none;
   }
@@ -281,7 +311,7 @@ body::-webkit-scrollbar-thumb {
   margin: 7% 0 0 2% ;
   width: 65%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .home-container .me .bio {
     width: 100%;
   }
@@ -309,6 +339,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .player-wrapper .react-player {
+  min-width: 300px;
   margin: 1% 1%;
 }
 .bts-container {
@@ -320,6 +351,15 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin-top: 6%;
 }
+@media only screen and (max-width: 700px) {
+  .bts-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .bts-container .bts-content-container {
   display: flex;
   flex-direction: column;
@@ -328,8 +368,18 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   width: 50%;
 }
+@media only screen and (max-width: 700px) {
+  .bts-container .bts-content-container {
+    width: 90%;
+  }
+}
 .bts-container .bts-content-container h2 {
   margin-bottom: 4%;
+}
+@media only screen and (max-width: 700px) {
+  .bts-container .bts-content-container h2 {
+    margin-top: 25px;
+  }
 }
 .bts-container .bts-pics {
   display: flex;
@@ -369,7 +419,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 100%;
   margin: 1.5%;
 }
 .footer-container .footer-sections p {
