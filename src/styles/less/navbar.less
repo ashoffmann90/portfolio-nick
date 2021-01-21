@@ -5,11 +5,18 @@
     header {
         margin: 2% 0;
         .flex(@justify: space-between, @align: center);
+
+        @media only screen and (max-width: 500px){
+            .flex(column, nowrap, space-around, center)
+        }
         
         .name-title-wrapper{
             .flex(column, nowrap, center, center);
             width: 30%;
-            margin-right: 5%;
+
+            @media only screen and (max-width: 500px){
+                width: 50%;
+            }
 
             img{
                 object-fit: scale-down;
@@ -18,9 +25,13 @@
             }
         }
         nav{
-            margin-left: 3%;
             width: 65%;
             .flex(@justify: space-between);
+
+            @media only screen and (max-width: 500px){
+                width: 100%;
+                margin-top: 3%;
+            }
             
             a{
                 letter-spacing: .1rem;

@@ -3,13 +3,24 @@
     width: 100%;
     margin-top: 6%;
 
+    @media only screen and (max-width: 700px){
+        .flex(column, nowrap, center, center);
+    }
 
     .bts-content-container{
         .flex(column, nowrap, center, center);
         width: 50%;
 
+        @media only screen and (max-width: 700px){
+            width: 90%;
+        }
+
         h2{
-            margin-bottom: 4%
+            margin-bottom: 4%;
+
+            @media only screen and (max-width: 700px){
+                margin-top: 25px;
+            }
         }
     }
     .bts-pics{

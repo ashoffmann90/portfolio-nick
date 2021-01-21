@@ -15,12 +15,20 @@ const InputField = styled.input`
     width: 50%;
     margin: 1% 0;
     height: 3em;
+
+    @media only screen and (max-width: 500px){
+        width: 80%;
+    }
 `;
 
 const TextArea = styled.textarea`
     width: 50%;
     margin: 2% 0;
     height: 5em;
+
+    @media only screen and (max-width: 500px){
+        width: 80%;
+    }
 `
 
 const Button = styled.button`
