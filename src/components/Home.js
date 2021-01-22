@@ -17,7 +17,7 @@ function Home() {
     return (
         <>
             <div className='player-wrapper-home'>
-                <ReactPlayer key='nickreel' className='react-player-home' url={'https://youtu.be/DiTD--ceH_U'} controls={true} light={true} playing={true} width='100%' height='100%' volume='null' muted={false} />
+                <ReactPlayer key='nickreel' className='react-player-home' url={'https://youtu.be/DiTD--ceH_U'} controls={true} playing={true} width='100%' height='100%' volume='null' muted={false} />
             </div>
 
         <div className='home-container'>
