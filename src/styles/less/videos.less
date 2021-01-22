@@ -1,8 +1,12 @@
 .player-wrapper {
-    .flex(row, wrap, center);
+    .flex(row, wrap, space-around);
 
     .react-player{
-        min-width: 300px;
+        min-width: 375px;
         margin: 1% 1%;
+
+        @media only screen and (max-width: 400px) {
+            min-width: 300px
+        }
     }
 }

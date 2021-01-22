@@ -9,6 +9,7 @@ const FormWrapperColumn = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items:  center;
+    height: 390px;
 `;
 
 const InputField = styled.input`
