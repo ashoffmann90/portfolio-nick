@@ -1,20 +1,23 @@
 .footer-container{
     border-top: 1px solid @border-color;
     .flex(row, nowrap, space-evenly, center);
+    position: absolute;
+    width: 100%;
+    bottom: auto;
     
     .footer-sections{
         .flex(column, nowrap, center, center);
         width: 100%;
-        margin: 1.5%;
+        margin: .5%;
 
         p{
             font-size: 1rem;
-            margin-bottom: 1%;
+            margin-bottom: .5%;
         }
         
         .social-icons{
             width: 25%;
-            .flex(row, nowrap, space-around, center);
+            .flex(row, nowrap, space-evenly, center);
         }
     }
 }
