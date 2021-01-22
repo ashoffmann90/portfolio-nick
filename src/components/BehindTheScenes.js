@@ -8,6 +8,23 @@ function BehindTheScenes() {
     const [isOpen, setIsOpen] = useState(false)
     const [photoIndex, setPhotoIndex] = useState()
 
+    const thumbnailArray = [
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03760.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03870.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/0ADSC03883.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC03496.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC03567.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04021.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04065.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04180.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04185.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_0435.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6484.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6486.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_9798.jpg',
+      'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/VLB+Shoot.jpg',
+    ]
+
     const imgArray = [
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/001.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/002.jpg',
@@ -23,12 +40,18 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG',
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
     ]
+
+    // No full size for this image
+    // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/R4030F08.jpg',
+
+    // No thumbnail for this image
+    // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
+
 
     const onClick = e => {
         setIsOpen(true)
-        setPhotoIndex(imgArray.indexOf(e.target.currentSrc))
+        setPhotoIndex(thumbnailArray.indexOf(e.target.currentSrc))
     }    
 
     return (
@@ -36,7 +59,7 @@ function BehindTheScenes() {
             <div className='bts-content-container'>
                 <h2>Photos</h2>
                 <div className='bts-pics'>
-                    {imgArray.map(pic => 
+                    {thumbnailArray.map(pic => 
                         <img src={pic} alt='x' onClick={onClick}/>
                         )}
                 </div>
