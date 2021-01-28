@@ -7,10 +7,10 @@ function Home() {
         'Tiffen Exovest',
         'Sachtler/Artemis Arm (57lbs Max Load)',
         'SmallHD 703 Ultrabright Monitor',
-        'Gold Mount Batteries (6)',
+        'Gold Mount Batteries (x6)',
+        'Sony L-Series Batteries (x4)',
         'Decimator MD-LX HDMI/SDI Converter',
         'Misc. Video/Power Cables',
-        'Sony L-Series Batteries (x4)',
     ]
 
 
