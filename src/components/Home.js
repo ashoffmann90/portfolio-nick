@@ -1,5 +1,7 @@
-import React from 'react'
-import ReactPlayer from "react-player"
+import React, {useState} from 'react'
+import {Button} from 'reactstrap'
+import VideoModal from './VideoModal'
+import ReactPlayer from 'react-player'
 
 function Home() {
     const gearList = [
@@ -13,11 +15,39 @@ function Home() {
         'Misc. Video/Power Cables',
     ]
 
+    const [modal, setModal] = useState(false)
+
+    const onClick = () => {
+        setModal(!modal)
+    }
+
+    // <ReactPlayer 
+    //     key='nickreel' 
+    //     className='react-player-home' 
+    //     url={'https://youtu.be/DiTD--ceH_U'} 
+    //     controls={true} 
+    //     playing={true} 
+    //     width='100vw' 
+    //     height='93vh' 
+    //     volume='.5' 
+    //     muted={true} 
+    // />
+
 
     return (
         <>
+            <VideoModal>
+                <h1>HELLLOOOOOOOO</h1>
+            </VideoModal>
             <div className='player-wrapper-home'>
-                <ReactPlayer key='nickreel' className='react-player-home' url={'https://youtu.be/DiTD--ceH_U'} controls={true} playing={true} width='100%' height='100%' volume='null' muted={false} />
+                <div className='overlay-box'>
+                    <h2>View Full Reel</h2>
+                    <Button onClick={onClick}>Reel</Button>
+                </div>
+
+                <video playsInline autoPlay muted loop id="bgvid" >
+                    <source src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Website+Loop++1.mp4" type="video/mp4"/>
+                </video>
             </div>
 
         <div className='home-container'>
