@@ -8,7 +8,6 @@ function NavBar() {
                 <div className='name-title-wrapper'>
                     <NavLink to='/'><img src='https://nick-portfolio.s3-us-west-2.amazonaws.com/Name_Title.jpg' alt='Nick Almanza Filmmaker/Steadycam Operator'/></NavLink>
                 </div>
-                
                 <nav>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/videos'>Videos</NavLink>

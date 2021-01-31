@@ -1,5 +1,7 @@
-import React from 'react'
-import ReactPlayer from "react-player"
+import React, {useState, useRef} from 'react'
+import {Button} from 'reactstrap'
+import VideoModal from './VideoModal'
+import ReactPlayer from 'react-player'
 
 function Home() {
     const gearList = [
@@ -7,17 +9,54 @@ function Home() {
         'Tiffen Exovest',
         'Sachtler/Artemis Arm (57lbs Max Load)',
         'SmallHD 703 Ultrabright Monitor',
-        'Gold Mount Batteries (6)',
+        'Gold Mount Batteries (x6)',
+        'Sony L-Series Batteries (x4)',
         'Decimator MD-LX HDMI/SDI Converter',
         'Misc. Video/Power Cables',
-        'Sony L-Series Batteries (x4)',
     ]
 
+    const [modal, setModal] = useState(false)
+    const [pause, setPause] = useState(false)
+
+    const vidRef = useRef(null)
+    const pauseVid = () => {
+        vidRef.current.pause()
+    }
+    const playVid = () => {
+        vidRef.current.play()
+    }
+
+    const modalHandler = e => {
+        setModal(!modal)
+        pause ? playVid() : pauseVid()
+        setPause(!pause)
+    }
 
     return (
         <>
+            <VideoModal show={modal} pause={pause} modalHandler={modalHandler}>
+                    <i className="fas fa-window-close fa-2x" onClick={modalHandler}></i>
+                <ReactPlayer 
+                    key='nickreel' 
+                    className='react-player-home' 
+                    url={'https://youtu.be/DiTD--ceH_U'} 
+                    controls={true} 
+                    playing={pause ? true : false} 
+                    width='100%' 
+                    height='100%' 
+                    volume={.5} 
+                    muted={false} 
+                />
+            </VideoModal>
             <div className='player-wrapper-home'>
-                <ReactPlayer key='nickreel' className='react-player-home' url={'https://youtu.be/DiTD--ceH_U'} controls={true} playing={true} width='100%' height='100%' volume='null' muted={false} />
+                <div className='overlay-box'>
+                    <h2>View Full Reel</h2>
+                    <button className='reel-button' onClick={modalHandler}>Reel</button>
+                </div>
+
+                <video ref={vidRef} playsInline autoPlay muted loop id="bgvid" >
+                    <source src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Website+Loop++1.mp4" type="video/mp4"/>
+                </video>
             </div>
 
         <div className='home-container'>

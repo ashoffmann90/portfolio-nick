@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import ReactPlayer from 'react-player'
 import Lightbox from 'react-image-lightbox';
+import HorizontalScroll from 'react-scroll-horizontal'
+
 import 'react-image-lightbox/style.css'; 
 
 function BehindTheScenes() {
@@ -54,14 +56,21 @@ function BehindTheScenes() {
         setPhotoIndex(thumbnailArray.indexOf(e.target.currentSrc))
     }    
 
+    const child = { width: `10em`, height: `25em`}
+    const parent  = { marginLeft:'15px', width: `50em`, height: `10em`}
+
     return (
         <div className='bts-container'>
             <div className='bts-content-container'>
                 <h2>Photos</h2>
-                <div className='bts-pics'>
+                <div className='bts-pics' style={parent}>
+                  <HorizontalScroll>
                     {thumbnailArray.map(pic => 
-                        <img src={pic} alt='x' onClick={onClick}/>
+                        <div style={child}>
+                          <img src={pic} alt='x' onClick={onClick}/>
+                        </div>
                         )}
+                  </HorizontalScroll>
                 </div>
             </div>
 
