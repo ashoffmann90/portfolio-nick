@@ -203,9 +203,6 @@ body::-webkit-scrollbar-thumb {
   height: 12vh;
 }
 @media only screen and (max-width: 900px) {
-  .nav-div {
-    margin-bottom: 0;
-  }
 }
 .nav-div header {
   margin: 2% 0;
@@ -215,7 +212,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: baseline;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .nav-div header {
     display: flex;
     flex-direction: column;
@@ -228,7 +225,7 @@ body::-webkit-scrollbar-thumb {
   width: 30%;
   margin-right: 12%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .nav-div header .name-title-wrapper {
     width: 50%;
     margin: 0 auto;
@@ -249,7 +246,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   bottom: 11px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .nav-div header nav {
     width: 100%;
     margin-top: 5%;
