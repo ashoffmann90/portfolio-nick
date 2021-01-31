@@ -200,6 +200,12 @@ body::-webkit-scrollbar-thumb {
 .nav-div {
   margin: 0 8%;
   margin-bottom: 4%;
+  height: 12vh;
+}
+@media only screen and (max-width: 900px) {
+  .nav-div {
+    margin-bottom: 0;
+  }
 }
 .nav-div header {
   margin: 2% 0;
@@ -286,7 +292,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 5%;
   width: 10vw;
   min-width: 60px;
-  height: 4vw;
+  height: 3.5vw;
   background-color: white;
   border: none;
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
@@ -435,6 +441,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  min-height: 65vh;
   margin-top: 6%;
 }
 @media only screen and (max-width: 700px) {
@@ -490,6 +497,44 @@ body::-webkit-scrollbar-thumb {
 .bts-container .bts-vids .bts-vid {
   margin: 0 2% 2% 2%;
 }
+.contact-container {
+  min-height: 64vh;
+}
+.contact-container form {
+  padding: 2em;
+  margin: 1% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 390px;
+}
+.contact-container form input {
+  width: 50%;
+  margin: 1% 0;
+  min-height: 3em;
+}
+@media only screen and (max-width: 500px) {
+  .contact-container form input {
+    width: 80%;
+  }
+}
+.contact-container form textarea {
+  width: 50%;
+  margin: 2% 0;
+  min-height: 5em;
+}
+@media only screen and (max-width: 500px) {
+  .contact-container form textarea {
+    width: 80%;
+  }
+}
+.contact-container form button {
+  background-color: white;
+  width: 20%;
+  min-height: 3em;
+  margin: 1% 0;
+}
 .footer-container {
   border-top: 1px solid white;
   display: flex;
@@ -497,9 +542,10 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
+  position: static;
   width: 100%;
-  bottom: auto;
+  height: 12vh;
+  bottom: 0;
 }
 .footer-container .footer-sections {
   display: flex;
@@ -523,13 +569,30 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
   position: fixed;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.315);
-  width: 95%;
+  z-index: 200;
+  background-color: #000000;
+  width: 95vw;
+  height: 95vh;
   box-shadow: 1px 1px 1px black;
   left: 2%;
   top: 2%;
+  bottom: 2%;
+  right: 2%;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
+}
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }

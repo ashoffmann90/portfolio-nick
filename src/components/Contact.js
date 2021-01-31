@@ -1,43 +1,6 @@
 import React, {useState} from 'react'
-import styled from 'styled-components'
 import emailjs from 'emailjs-com'
 
-const FormWrapperColumn = styled.form`
-    padding: 2em;
-    margin: 1% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:  center;
-    height: 390px;
-`;
-
-const InputField = styled.input`
-    width: 50%;
-    margin: 1% 0;
-    height: 3em;
-
-    @media only screen and (max-width: 500px){
-        width: 80%;
-    }
-`;
-
-const TextArea = styled.textarea`
-    width: 50%;
-    margin: 2% 0;
-    height: 5em;
-
-    @media only screen and (max-width: 500px){
-        width: 80%;
-    }
-`
-
-const Button = styled.button`
-    background-color: white;
-    width: 20%;
-    height: 3em;
-    margin: 1% 0;
-`;
 
 const initialState = {
     name: '',
@@ -80,9 +43,9 @@ function Contact() {
 
     return (
         <div className='contact-container'>
-            <FormWrapperColumn onSubmit={onSubmit}>
+            <form onSubmit={onSubmit}>
                 <h2>Contact Nick</h2>
-                <InputField
+                <input
                     name='name'
                     type='text'
                     value={form.name || ''}
@@ -90,7 +53,7 @@ function Contact() {
                     placeholder='Enter Name Here'
                 />
 
-                <InputField
+                <input
                     name='email'
                     type='text'
                     value={form.email || ''}
@@ -98,7 +61,7 @@ function Contact() {
                     placeholder='Enter Email Here'    
                 />
 
-                <TextArea 
+                <textarea 
                     id='message' 
                     name='message' 
                     value={form.message || ''}
@@ -106,14 +69,14 @@ function Contact() {
                     placeholder='Type Message Here'
                     rows='5' 
                     cols='35'>
-                </TextArea>
+                </textarea>
 
-                <Button
+                <button
                     type='submit'
                     >
                     Submit
-                </Button>
-            </FormWrapperColumn>
+                </button>
+            </form>
         </div>
     )
 }

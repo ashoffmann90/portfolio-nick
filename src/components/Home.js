@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import {Button} from 'reactstrap'
 import VideoModal from './VideoModal'
 import ReactPlayer from 'react-player'
@@ -16,36 +16,45 @@ function Home() {
     ]
 
     const [modal, setModal] = useState(false)
+    const [pause, setPause] = useState(false)
 
-    const onClick = () => {
-        setModal(!modal)
+    const vidRef = useRef(null)
+    const pauseVid = () => {
+        vidRef.current.pause()
+    }
+    const playVid = () => {
+        vidRef.current.play()
     }
 
-    // <ReactPlayer 
-    //     key='nickreel' 
-    //     className='react-player-home' 
-    //     url={'https://youtu.be/DiTD--ceH_U'} 
-    //     controls={true} 
-    //     playing={true} 
-    //     width='100vw' 
-    //     height='93vh' 
-    //     volume='.5' 
-    //     muted={true} 
-    // />
-
+    const modalHandler = e => {
+        setModal(!modal)
+        pause ? playVid() : pauseVid()
+        setPause(!pause)
+    }
 
     return (
         <>
-            <VideoModal>
-                <h1>HELLLOOOOOOOO</h1>
+            <VideoModal show={modal} pause={pause} modalHandler={modalHandler}>
+                    <i className="fas fa-window-close fa-2x" onClick={modalHandler}></i>
+                <ReactPlayer 
+                    key='nickreel' 
+                    className='react-player-home' 
+                    url={'https://youtu.be/DiTD--ceH_U'} 
+                    controls={true} 
+                    playing={pause ? true : false} 
+                    width='100%' 
+                    height='100%' 
+                    volume={.5} 
+                    muted={false} 
+                />
             </VideoModal>
             <div className='player-wrapper-home'>
                 <div className='overlay-box'>
                     <h2>View Full Reel</h2>
-                    <Button onClick={onClick}>Reel</Button>
+                    <button className='reel-button' onClick={modalHandler}>Reel</button>
                 </div>
 
-                <video playsInline autoPlay muted loop id="bgvid" >
+                <video ref={vidRef} playsInline autoPlay muted loop id="bgvid" >
                     <source src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Website+Loop++1.mp4" type="video/mp4"/>
                 </video>
             </div>

@@ -1,12 +1,15 @@
 import React from 'react'
+import Backdrop from './Backdrop'
 
-function VideoModal(props) {
-    const {children} = props
+function VideoModal({children, show, modalHandler}) {
 
     return (
-        <div className='modal'>
+        <>
+        <Backdrop show={show} modalHandler={modalHandler} />
+        <div className='modal' style={{ margin: '0 auto', transform:show ? 'translateY(0)' : 'translateY(-100vh)', opactiy:show ? 1 : 0 }}>
             {children}
         </div>
+        </>
     )
 }
 

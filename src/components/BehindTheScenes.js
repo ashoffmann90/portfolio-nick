@@ -64,13 +64,13 @@ function BehindTheScenes() {
             <div className='bts-content-container'>
                 <h2>Photos</h2>
                 <div className='bts-pics' style={parent}>
-                  {/* <HorizontalScroll> */}
+                  <HorizontalScroll>
                     {thumbnailArray.map(pic => 
-                        // <div style={child}>
+                        <div style={child}>
                           <img src={pic} alt='x' onClick={onClick}/>
-                        // </div>
+                        </div>
                         )}
-                  {/* </HorizontalScroll> */}
+                  </HorizontalScroll>
                 </div>
             </div>
 
