@@ -225,7 +225,8 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 800px) {
   .nav-div header .name-title-wrapper {
-    width: 50%;
+    width: 75%;
+    max-width: 275px;
     margin: 0 auto;
   }
 }
@@ -233,6 +234,8 @@ body::-webkit-scrollbar-thumb {
   object-fit: scale-down;
   width: 100%;
   height: auto;
+  min-width: 200px;
+  margin: 0 auto;
 }
 .nav-div header nav {
   width: 65%;
@@ -583,6 +586,9 @@ body::-webkit-scrollbar-thumb {
   right: 2%;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
+}
+.modal p {
+  align-self: flex-end;
 }
 .backdrop {
   width: 100vw;

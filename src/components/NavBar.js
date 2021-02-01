@@ -9,7 +9,7 @@ function NavBar() {
                     <NavLink to="/">
                         <img
                             src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Name_Title.jpg"
-                            alt="Nick Almanza Filmmaker/Steadycam Operator"
+                            alt="Logo for Nick Almanza Filmmaker/Steadycam Operator"
                         />
                     </NavLink>
                 </div>
