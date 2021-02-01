@@ -50,8 +50,8 @@ function Home() {
             </VideoModal>
             <div className='player-wrapper-home'>
                 <div className='overlay-box'>
-                    <h2>View Full Reel</h2>
-                    <button className='reel-button' onClick={modalHandler}>Reel</button>
+                    <h2>View Reel</h2>
+                    <button className='reel-button' onClick={modalHandler}>Watch</button>
                 </div>
 
                 <video ref={vidRef} playsInline autoPlay muted loop id="bgvid" >

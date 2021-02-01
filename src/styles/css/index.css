@@ -202,8 +202,6 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 4%;
   height: 12vh;
 }
-@media only screen and (max-width: 900px) {
-}
 .nav-div header {
   margin: 2% 0;
   display: flex;
@@ -435,16 +433,16 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   width: 100%;
   min-height: 65vh;
-  margin-top: 6%;
+  margin: 6% 0;
 }
 @media only screen and (max-width: 700px) {
   .bts-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -456,7 +454,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
 }
 @media only screen and (max-width: 700px) {
   .bts-container .bts-content-container {
@@ -492,6 +490,7 @@ body::-webkit-scrollbar-thumb {
   align-items: align;
 }
 .bts-container .bts-vids .bts-vid {
+  height: auto;
   margin: 0 2% 2% 2%;
 }
 .contact-container {
