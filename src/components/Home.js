@@ -34,10 +34,12 @@ function Home() {
     return (
         <>
             <VideoModal show={modal} pause={pause} modalHandler={modalHandler}>
-                <i
-                    className="fas fa-window-close fa-2x"
-                    onClick={modalHandler}
-                ></i>
+                <p>
+                    <i
+                        class="fas fa-window-close fa-lg"
+                        onClick={modalHandler}
+                    ></i>
+                </p>
                 <ReactPlayer
                     key="nickreel"
                     className="react-player-home"
