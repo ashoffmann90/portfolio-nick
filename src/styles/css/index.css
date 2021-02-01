@@ -191,7 +191,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -354,7 +354,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: align;
-  margin: 75px 0 0 2% ;
+  margin: 75px 0 0 2%;
   width: 65%;
 }
 @media only screen and (max-width: 900px) {
@@ -462,34 +462,35 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .bts-container .bts-content-container h2 {
-  margin-bottom: 4%;
+  margin: 5% 0;
 }
 @media only screen and (max-width: 700px) {
   .bts-container .bts-content-container h2 {
     margin-top: 25px;
   }
 }
-.bts-container .bts-pics {
+.bts-container .bts-content-container .bts-pics {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: align;
+  margin-bottom: 7%;
 }
-.bts-container .bts-pics img {
-  width: 150px;
+.bts-container .bts-content-container .bts-pics img {
+  width: 200px;
   height: auto;
   object-fit: cover;
   margin: 0 2% 2%;
 }
-.bts-container .bts-vids {
+.bts-container .bts-content-container .bts-vids {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: align;
 }
-.bts-container .bts-vids .bts-vid {
+.bts-container .bts-content-container .bts-vids .bts-vid {
   height: auto;
   margin: 0 2% 2% 2%;
 }
