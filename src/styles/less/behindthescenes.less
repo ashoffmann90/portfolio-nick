@@ -1,45 +1,47 @@
-.bts-container{
-    .flex(row, nowrap, space-between, flex-start);
+.bts-container {
+    .flex(row, nowrap, space-around, flex-start);
     width: 100%;
     min-height: 65vh;
-    margin-top: 6%;
+    margin: 6% 0;
 
-    @media only screen and (max-width: 700px){
-        .flex(column-reverse, nowrap, center, center);
+    @media only screen and (max-width: 700px) {
+        .flex(column, nowrap, center, center);
     }
 
-    .bts-content-container{
+    .bts-content-container {
         .flex(column, nowrap, center, center);
-        width: 50%;
+        width: 45%;
 
-        @media only screen and (max-width: 700px){
+        @media only screen and (max-width: 700px) {
             width: 90%;
         }
 
-        h2{
-            margin-bottom: 4%;
+        h2 {
+            margin: 5% 0;
 
-            @media only screen and (max-width: 700px){
+            @media only screen and (max-width: 700px) {
                 margin-top: 25px;
             }
         }
-    }
-    .bts-pics{
-        .flex(row, wrap, center, align);
+        .bts-pics {
+            .flex(row, wrap, center, align);
+            margin-bottom: 7%;
 
-        img{
-            width: 150px;
-            height: auto;
-            object-fit: cover;
-            margin: 0 2% 2%;
+            img {
+                width: 200px;
+                height: auto;
+                object-fit: cover;
+                margin: 0 2% 2%;
+            }
         }
-    }
 
-    .bts-vids{
-        .flex(row, wrap, center, align);
+        .bts-vids {
+            .flex(row, wrap, center, align);
 
-        .bts-vid{
-            margin: 0 2% 2% 2%;
+            .bts-vid {
+                height: auto;
+                margin: 0 2% 2% 2%;
+            }
         }
     }
 }

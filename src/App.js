@@ -1,7 +1,7 @@
 import React from 'react'
-import { Route } from 'react-router';
-import { BrowserRouter as Router } from 'react-router-dom';
-import {createGlobalStyle} from 'styled-components'
+import { Route } from 'react-router'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { createGlobalStyle } from 'styled-components'
 
 import AnotherFlight from './assets/fonts/Another Flight.ttf'
 import Basicaline from './assets/fonts/BasicalineRegular.ttf'
@@ -49,29 +49,28 @@ a{
 }
 `
 
-
 function App() {
-  return (
-    <div>
-      <GlobalStyle/>
-      <Router>
-      <NavBar/>
-      <Route exact path='/'>
-        <Home/>
-      </Route>
-      <Route exact path='/videos'>
-        <Videos/>
-      </Route>
-      <Route exact path='/contact'>
-        <Contact/>
-      </Route>
-      <Route exact path='/bts'>
-        <BehindTheScenes/>
-      </Route>
-      <Footer/>
-      </Router>
-    </div>
-  );
+    return (
+        <div>
+            <GlobalStyle />
+            <Router>
+                <NavBar />
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/videos">
+                    <Videos />
+                </Route>
+                <Route exact path="/contact">
+                    <Contact />
+                </Route>
+                <Route exact path="/bts">
+                    <BehindTheScenes />
+                </Route>
+                <Footer />
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App

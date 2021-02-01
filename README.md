@@ -1,25 +1,10 @@
 Goals:
 Home Page
-x I know I asked for autoplay on the reel, but can it be muted until someone clicks on it?
-2. Also, can the reel stretch the entire width of the browser, no matter what size someone has it set to?
-3. Can we bring the font size down a couple points on the Bio?
-4. Can we also adjust the font size for each item in my steadicam kit?
-4. Let's eliminate the word "His" in the section that says His Steadicam Kit
-5. Can we place some bullet points or dashes next to each item in my kit and also have each item on its own line?
-6. At the top where it has my name/title, I sent you a jpeg with the correct font, let's adjust that as well (on each page)
+x I know I asked for autoplay on the reel, but can it be muted until someone clicks on it? 2. Also, can the reel stretch the entire width of the browser, no matter what size someone has it set to? 3. Can we bring the font size down a couple points on the Bio? 4. Can we also adjust the font size for each item in my steadicam kit? 4. Let's eliminate the word "His" in the section that says His Steadicam Kit 5. Can we place some bullet points or dashes next to each item in my kit and also have each item on its own line? 6. At the top where it has my name/title, I sent you a jpeg with the correct font, let's adjust that as well (on each page)
 
-Videos Page
-7. Let's bring the thumbnail size down a couple points
+Videos Page 7. Let's bring the thumbnail size down a couple points
 
-BTS Page
-8. The photos seemed to load slowly, is there a solution to fix that?
-9. It also looks like there’s some broken links in the photos section..like some of them didn’t load
-10. Can you give a little “breathing room” between the words “photos/videos” and the content below them?
-
-
-
-
-
+BTS Page 8. The photos seemed to load slowly, is there a solution to fix that? 9. It also looks like there’s some broken links in the photos section..like some of them didn’t load 10. Can you give a little “breathing room” between the words “photos/videos” and the content below them?
 
 # Getting Started with Create React App
 
