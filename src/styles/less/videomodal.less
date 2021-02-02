@@ -6,12 +6,21 @@
     width: 98vw;
     height: 98vh;
     box-shadow: 1px 1px 1px black;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    left: 1%;
+    top: 1%;
+    bottom: auto;
+    right: auto;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+
+    @media only screen and (max-width: 1000px) {
+        width: 99vw;
+        height: 99vh;
+        left: 3%;
+        top: 3%;
+        // bottom: 2%;
+        // right: 2%;
+    }
 
     p {
         align-self: flex-end;
