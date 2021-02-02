@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
 import Lightbox from 'react-image-lightbox'
-import HorizontalScroll from 'react-scroll-horizontal'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 import 'react-image-lightbox/style.css'
 
@@ -46,54 +47,85 @@ function BehindTheScenes() {
     // No thumbnail for this image
     // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
 
+    const imgResponsive = {
+        0: { items: 1 },
+        568: { items: 2 },
+        700: { items: 3 },
+        950: { items: 4 },
+    }
+
+    const responsive = {
+        0: { items: 1 },
+        568: { items: 1 },
+        1024: { items: 2 },
+    }
+
+    const onClick = (e) => {
+        setIsOpen(true)
+        setPhotoIndex(imgArray.indexOf(e.target.currentSrc))
+    }
+
+    const thumbnailOnClick = (e) => {
+        setThumbnailIndex(thumbnailArray.indexOf(e.target.currentSrc))
+        setIsThumbnailOpen(true)
+    }
+
+    const picItems = []
+    imgArray.map((src, index) =>
+        picItems.push(
+            <div className="bts-pics" data-value={index}>
+                <img
+                    src={src}
+                    alt="Behind the scenes with Nick Almanza operating the steadycam."
+                    onClick={onClick}
+                />
+            </div>
+        )
+    )
+
     const urlArray = [
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
         'https://youtu.be/sqKebZMCKN8',
         'https://youtu.be/sqKebZMCKN8',
         'https://youtu.be/sqKebZMCKN8',
         'https://youtu.be/sqKebZMCKN8',
     ]
 
+    const vidItems = []
+    urlArray.map((url, index) =>
+        vidItems.push(
+            <div className="react-player-div" data-value={index}>
+                <ReactPlayer
+                    className="react-player"
+                    url={url}
+                    controls={true}
+                    width="100%"
+                />
+            </div>
+        )
+    )
+
     const [isOpen, setIsOpen] = useState(false)
-    // const [vidIsOpen, setVidIsOpen] = useState(false)
+    const [isThumbnailOpen, setIsThumbnailOpen] = useState(false)
     const [photoIndex, setPhotoIndex] = useState()
-    // const [urlIndex, setUrlIndex] = useState()
+    const [thumbnailIndex, setThumbnailIndex] = useState()
     const [windowSize, setWindowSize] = useState(window.innerWidth)
 
-    const onClick = (e) => {
-        setIsOpen(true)
-        setPhotoIndex(thumbnailArray.indexOf(e.target.currentSrc))
-    }
-
-    // const onVidClick = (e) => {
-    //     setVidIsOpen(true)
-    //     setUrlIndex(urlArray.indexOf(e.target.currentSrc))
-    // }
-
-    const picsChild = { width: `15em`, height: `25em` }
-    const picsParent = { marginLeft: '15px', width: `50em`, height: `15em` }
-    const vidsChild = { width: `20em`, height: `50em` }
-    const vidsParent = { marginLeft: '15px', width: `50em`, height: `25em` }
-
     window.addEventListener('resize', () => setWindowSize(window.innerWidth))
-
+    console.log(imgArray[photoIndex])
     return (
         <div className="bts-container">
-            {windowSize <= 700 ? (
+            {windowSize <= 1000 ? (
                 <div className="bts-content-container">
                     <h2>Photos</h2>
-                    <div className="bts-pics" style={picsParent}>
-                        <HorizontalScroll>
-                            {thumbnailArray.map((pic, index) => (
-                                <div style={picsChild} key={index}>
-                                    <img src={pic} alt="x" onClick={onClick} />
-                                </div>
-                            ))}
-                        </HorizontalScroll>
-                    </div>
+                    <AliceCarousel
+                        mouseTracking
+                        touchTracking
+                        infinite
+                        animationDuration={800}
+                        activeIndex={photoIndex - 1}
+                        items={picItems}
+                        responsive={imgResponsive}
+                    />
                 </div>
             ) : (
                 <div className="bts-content-container">
@@ -103,14 +135,13 @@ function BehindTheScenes() {
                             <img
                                 key={index}
                                 src={pic}
-                                alt="x"
-                                onClick={onClick}
+                                alt="Behind the scenes with Nick Almanza operating the steadycam."
+                                onClick={thumbnailOnClick}
                             />
                         ))}
                     </div>
                 </div>
             )}
-
             {isOpen && (
                 <Lightbox
                     mainSrc={imgArray[photoIndex]}
@@ -131,31 +162,52 @@ function BehindTheScenes() {
                     }
                 />
             )}
-
-            {windowSize <= 700 ? (
-                <div className="bts-content-container">
-                    <h2>Videos</h2>
-                    <div className="bts-vids" style={vidsParent}>
-                        <HorizontalScroll>
-                            {urlArray.map((vid, index) => (
-                                <div style={vidsChild} key={index}>
-                                    <ReactPlayer
-                                        className="bts-vid"
-                                        url={vid}
-                                        controls={true}
-                                        width="75%"
-                                    />
-                                </div>
-                            ))}
-                        </HorizontalScroll>
-                    </div>
+            {isThumbnailOpen && (
+                <Lightbox
+                    mainSrc={imgArray[thumbnailIndex]}
+                    nextSrc={imgArray[(thumbnailIndex + 1) % imgArray.length]}
+                    prevSrc={
+                        imgArray[
+                            (thumbnailIndex + imgArray.length - 1) %
+                                imgArray.length
+                        ]
+                    }
+                    onCloseRequest={() => setIsThumbnailOpen(false)}
+                    onMovePrevRequest={() =>
+                        setThumbnailIndex(
+                            (thumbnailIndex + imgArray.length - 1) %
+                                imgArray.length
+                        )
+                    }
+                    onMoveNextRequest={() =>
+                        setThumbnailIndex(
+                            (thumbnailIndex + 1) % imgArray.length
+                        )
+                    }
+                />
+            )}
+            {/* {windowSize <= 1000 ? ( */}
+            <div className="bts-content-container">
+                <h2>Videos</h2>
+                <div className="bts-vids">
+                    <AliceCarousel
+                        mouseTracking
+                        touchTracking
+                        infinite
+                        animationDuration={1400}
+                        items={vidItems}
+                        responsive={responsive}
+                    />
                 </div>
-            ) : (
+            </div>
+            )
+            {/* 
+            : (
                 <div className="bts-content-container">
                     <h2>Videos</h2>
                     <div className="bts-vids">
                         {urlArray.map((vid, index) => (
-                            <div>
+                            <div className="react-player-div">
                                 <ReactPlayer
                                     className="bts-vid"
                                     key={index}
@@ -167,27 +219,6 @@ function BehindTheScenes() {
                         ))}
                     </div>
                 </div>
-            )}
-
-            {/* {vidIsOpen && (
-                <Lightbox
-                    mainSrc={urlArray[urlIndex]}
-                    nextSrc={urlArray[(urlIndex + 1) % urlArray.length]}
-                    prevSrc={
-                        urlArray[
-                            (urlIndex + urlArray.length - 1) % urlArray.length
-                        ]
-                    }
-                    onCloseRequest={() => setVidIsOpen(false)}
-                    onMovePrevRequest={() =>
-                        setUrlIndex(
-                            (urlIndex + urlArray.length - 1) % urlArray.length
-                        )
-                    }
-                    onMoveNextRequest={() =>
-                        setUrlIndex((urlIndex + 1) % urlArray.length)
-                    }
-                />
             )} */}
         </div>
     )
