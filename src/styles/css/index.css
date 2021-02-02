@@ -530,7 +530,7 @@ body::-webkit-scrollbar-thumb {
   margin: 1% 0;
   min-height: 3em;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .contact-container form input {
     width: 80%;
   }
@@ -538,9 +538,9 @@ body::-webkit-scrollbar-thumb {
 .contact-container form textarea {
   width: 50%;
   margin: 2% 0;
-  min-height: 5em;
+  min-height: 8em;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .contact-container form textarea {
     width: 80%;
   }
@@ -593,13 +593,13 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 200;
   background-color: #000000;
-  width: 95vw;
-  height: 95vh;
+  width: 98vw;
+  height: 98vh;
   box-shadow: 1px 1px 1px black;
-  left: 2%;
-  top: 2%;
-  bottom: 2%;
-  right: 2%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
