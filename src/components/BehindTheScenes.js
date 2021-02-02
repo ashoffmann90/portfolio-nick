@@ -47,9 +47,15 @@ function BehindTheScenes() {
     // No thumbnail for this image
     // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
 
+    const [isOpen, setIsOpen] = useState(false)
+    const [isThumbnailOpen, setIsThumbnailOpen] = useState(false)
+    const [photoIndex, setPhotoIndex] = useState()
+    const [thumbnailIndex, setThumbnailIndex] = useState()
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
+
     const imgResponsive = {
         0: { items: 1 },
-        568: { items: 2 },
+        480: { items: 2 },
         700: { items: 3 },
         950: { items: 4 },
     }
@@ -104,14 +110,7 @@ function BehindTheScenes() {
         )
     )
 
-    const [isOpen, setIsOpen] = useState(false)
-    const [isThumbnailOpen, setIsThumbnailOpen] = useState(false)
-    const [photoIndex, setPhotoIndex] = useState()
-    const [thumbnailIndex, setThumbnailIndex] = useState()
-    const [windowSize, setWindowSize] = useState(window.innerWidth)
-
     window.addEventListener('resize', () => setWindowSize(window.innerWidth))
-    console.log(imgArray[photoIndex])
     return (
         <div className="bts-container">
             {windowSize <= 1000 ? (
