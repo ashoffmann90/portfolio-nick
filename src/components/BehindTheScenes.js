@@ -22,6 +22,8 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6486.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_9798.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/VLB+Shoot.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/R4030F08.jpg',
     ]
 
     const imgArray = [
@@ -39,13 +41,16 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg',
+        'https://nick-portfolio.s3-us-west-2.amazonaws.com/R4030F08.jpg',
     ]
 
     // No full size for this image
-    // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/R4030F08.jpg',
+    //
 
     // No thumbnail for this image
-    // 'https://nick-portfolio.s3-us-west-2.amazonaws.com/IMG_5225.jpeg'
+    //
+    //
 
     const [isOpen, setIsOpen] = useState(false)
     const [isThumbnailOpen, setIsThumbnailOpen] = useState(false)
