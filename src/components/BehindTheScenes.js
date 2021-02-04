@@ -45,13 +45,6 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/R4030F08.jpg',
     ]
 
-    // No full size for this image
-    //
-
-    // No thumbnail for this image
-    //
-    //
-
     const [isOpen, setIsOpen] = useState(false)
     const [isThumbnailOpen, setIsThumbnailOpen] = useState(false)
     const [photoIndex, setPhotoIndex] = useState()
@@ -190,7 +183,6 @@ function BehindTheScenes() {
                     }
                 />
             )}
-            {/* {windowSize <= 1000 ? ( */}
             <div className="bts-content-container">
                 <h2>Videos</h2>
                 <div className="bts-vids">
@@ -205,25 +197,6 @@ function BehindTheScenes() {
                 </div>
             </div>
             )
-            {/* 
-            : (
-                <div className="bts-content-container">
-                    <h2>Videos</h2>
-                    <div className="bts-vids">
-                        {urlArray.map((vid, index) => (
-                            <div className="react-player-div">
-                                <ReactPlayer
-                                    className="bts-vid"
-                                    key={index}
-                                    url={vid}
-                                    controls={true}
-                                    width="75%"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )} */}
         </div>
     )
 }
