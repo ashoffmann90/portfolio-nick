@@ -482,6 +482,7 @@ body::-webkit-scrollbar-thumb {
   align-items: align;
   margin-bottom: 5%;
   width: 80%;
+  max-height: 50%;
 }
 @media only screen and (max-width: 1000px) {
   .bts-container .bts-content-container .bts-pics {
@@ -491,6 +492,7 @@ body::-webkit-scrollbar-thumb {
 .bts-container .bts-content-container .bts-pics img {
   width: 200px;
   height: auto;
+  max-height: 400px;
   object-fit: cover;
   margin: 0 0.5% 2%;
 }
