@@ -36,7 +36,7 @@ function Home() {
             <VideoModal show={modal} pause={pause} modalHandler={modalHandler}>
                 <p>
                     <i
-                        class="fas fa-window-close fa-lg"
+                        className="fas fa-window-close fa-lg"
                         onClick={modalHandler}
                     ></i>
                 </p>
