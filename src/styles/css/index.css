@@ -545,8 +545,8 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 2% 3% 4%;
-  width: 90%;
+  margin: 0 auto;
+  width: 50%;
   height: auto;
 }
 .contact-container {
