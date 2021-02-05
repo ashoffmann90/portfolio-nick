@@ -3,6 +3,7 @@ import VideoModal from './VideoModal'
 import ReactPlayer from 'react-player'
 
 function Home() {
+    // Specific Order
     const gearList = [
         'GPI Pro Sled (Cine Live)',
         'Tiffen Exovest',
