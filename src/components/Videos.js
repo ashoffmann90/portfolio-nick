@@ -77,8 +77,8 @@ function Videos() {
                     url={video.url}
                     key={index}
                     controls={true}
-                    volume="null"
-                    muted={true}
+                    volume={1}
+                    muted={false}
                     width="30%"
                     height="30vh"
                 />
