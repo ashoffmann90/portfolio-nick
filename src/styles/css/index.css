@@ -539,7 +539,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-container form {
   padding: 2em;
-  margin: 1vh 0;
+  margin: 1vh 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -570,7 +570,7 @@ body::-webkit-scrollbar-thumb {
   background-color: white;
   width: 20%;
   min-height: 5vh;
-  margin: 1vh 0;
+  margin: 1vh 0 0 0;
 }
 .contact-container .social-icons {
   width: 100vw;
