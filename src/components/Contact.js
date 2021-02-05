@@ -85,7 +85,7 @@ function Contact() {
                 <a href="https://www.instagram.com/nick__almanza/">
                     <i className="fab fa-instagram fa-2x"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/steadi-nick-almanza/">
                     <i className="fab fa-linkedin fa-2x"></i>
                 </a>
             </div>
