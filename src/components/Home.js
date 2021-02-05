@@ -8,6 +8,9 @@ function Home() {
         'Tiffen Exovest',
         'Sachtler/Artemis Arm (57lbs Max Load)',
         'SmallHD 703 Ultrabright Monitor',
+    ]
+
+    const gearList2 = [
         'Gold Mount Batteries (x6)',
         'Sony L-Series Batteries (x4)',
         'Decimator MD-LX HDMI/SDI Converter',
@@ -91,28 +94,30 @@ function Home() {
                         <p>
                             His work as an operator has been featured on Jimmy
                             Fallon, Stephen Colbert, Good Morning America, the
-                            Ellen Show and The Today Show. He is very familiar
-                            and versatile with all of the leading industry
-                            cameras and lenses and can adapt to each set he
-                            moves on to.
-                        </p>
-                        <p>
-                            He looks forward to continually growing in the
-                            industry and building relationships with each new
-                            production he meets along the way! Feel free to
-                            navigate towards the “Contact” page for any
-                            inquiries to get your project started!
+                            Ellen Show and The Today Show. He looks forward to
+                            continually growing in the industry and building
+                            relationships with each new production he meets
+                            along the way! Feel free to navigate towards the
+                            “Contact” page for any inquiries to get your project
+                            started!
                         </p>
                     </div>
                 </div>
 
                 <div className="gear">
                     <h2>Steadicam Kit:</h2>
-                    <ul>
-                        {gearList.map((gear, index) => (
-                            <li key={index}>{gear}</li>
-                        ))}
-                    </ul>
+                    <div className="gear-list-flex">
+                        <ul>
+                            {gearList.map((gear, index) => (
+                                <li key={index}>{gear}</li>
+                            ))}
+                        </ul>
+                        <ul>
+                            {gearList2.map((gear, index) => (
+                                <li key={index}>{gear}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

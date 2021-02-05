@@ -81,6 +81,14 @@ function Contact() {
 
                 <button type="submit">Submit</button>
             </form>
+            <div className="social-icons">
+                <a href="https://www.instagram.com/nick__almanza/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
         </div>
     )
 }
