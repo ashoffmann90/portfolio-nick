@@ -18,7 +18,6 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04180.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/DSC04185.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_0435.jpg',
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6484.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_6486.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/IMG_9798.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/thumbnails/VLB+Shoot.jpg',
@@ -37,7 +36,6 @@ function BehindTheScenes() {
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/009.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/010.jpg',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/011.JPG',
-        'https://nick-portfolio.s3-us-west-2.amazonaws.com/012.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/013.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/014.JPG',
         'https://nick-portfolio.s3-us-west-2.amazonaws.com/015.JPG',
@@ -52,9 +50,9 @@ function BehindTheScenes() {
     const [windowSize, setWindowSize] = useState(window.innerWidth)
 
     const imgResponsive = {
-        0: { items: 1 },
-        480: { items: 2 },
-        700: { items: 3 },
+        0: { items: 2 },
+        530: { items: 3 },
+        700: { items: 4 },
         950: { items: 4 },
     }
 

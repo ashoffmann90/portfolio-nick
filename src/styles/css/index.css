@@ -280,6 +280,12 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   z-index: 1;
 }
+@media only screen and (max-width: 900px) {
+  .player-wrapper-home .overlay-box {
+    top: 5vh;
+    left: 5vw;
+  }
+}
 .player-wrapper-home .overlay-box h2 {
   font-size: 5vw;
   margin: 3% 5%;
@@ -513,14 +519,15 @@ body::-webkit-scrollbar-thumb {
 }
 .bts-container .bts-content-container .bts-pics img {
   width: 150px;
-  height: auto;
+  height: 150px;
   max-height: 400px;
   object-fit: cover;
   margin: 0 0.5% 2%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 400px) {
   .bts-container .bts-content-container .bts-pics img {
-    width: 200px;
+    width: 125px;
+    height: 125px;
   }
 }
 .bts-container .bts-content-container .bts-vids {
