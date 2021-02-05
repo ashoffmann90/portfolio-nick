@@ -552,7 +552,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 900px) {
   .bts-container .bts-content-container .bts-vids .react-player-div {
-    width: 100%;
+    width: 90%;
   }
 }
 .contact-container {
