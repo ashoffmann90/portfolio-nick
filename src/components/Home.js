@@ -91,8 +91,8 @@ function Home() {
                             graduated from California State University
                             Northridge with a degree in Cinema and Television
                             Arts.
-                        </p>
-                        <p>
+                            <br />
+                            <br />
                             His work as an operator has been featured on Jimmy
                             Fallon, Stephen Colbert, Good Morning America, the
                             Ellen Show and The Today Show. He looks forward to
