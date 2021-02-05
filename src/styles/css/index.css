@@ -152,7 +152,8 @@ body {
   background: black;
   overflow-x: hidden;
   overflow-y: overlay;
-  max-width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 body p,
 body li {
@@ -468,9 +469,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   max-height: 100%;
-  width: 100vw;
+  width: 100vh;
   min-height: 65vh;
-  margin: 2vh 0 3vh 0;
+  margin: 2vh auto 3vh auto;
+  max-width: 100%;
 }
 @media only screen and (max-width: 1000px) {
   .bts-container {
@@ -487,7 +489,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  max-width: 100vw;
 }
 @media only screen and (max-width: 1000px) {
   .bts-container .bts-content-container {
