@@ -85,12 +85,7 @@ function BehindTheScenes() {
         )
     )
 
-    const urlArray = [
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
-        'https://youtu.be/sqKebZMCKN8',
-    ]
+    const urlArray = ['https://youtu.be/sqKebZMCKN8']
 
     const vidItems = []
     urlArray.map((url, index) =>
