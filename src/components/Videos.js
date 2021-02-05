@@ -32,6 +32,22 @@ function Videos() {
             url: 'https://youtu.be/qbfQgK0tjTg',
         },
         {
+            artist: 'Vel the Wonder',
+            url: 'https://youtu.be/lcQPskvkG9k',
+        },
+        {
+            artist: 'Dirty Honey',
+            url: 'https://youtu.be/H_hXyzj3ZEc',
+        },
+        {
+            artist: 'MadeinTYO',
+            url: 'https://youtu.be/s-HuzExvQO8',
+        },
+        {
+            artist: 'Mack Keane',
+            url: 'https://youtu.be/1tdlfJBnRIY',
+        },
+        {
             artist: 'Say Grace',
             url: 'https://youtu.be/5WnU4G4LL3E',
         },
