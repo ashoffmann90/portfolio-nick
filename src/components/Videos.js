@@ -4,6 +4,10 @@ import ReactPlayer from 'react-player'
 function Videos() {
     const videos = [
         {
+            artist: 'Remi Wolf',
+            url: 'https://youtu.be/qKKGjnqKUqw',
+        },
+        {
             artist: 'Saint Jhn',
             url: 'https://youtu.be/pDsas5WHPXk',
         },

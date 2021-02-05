@@ -199,12 +199,12 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(211, 211, 211, 0.664);
 }
 .nav-div {
-  margin: 0 8%;
-  margin-bottom: 4%;
-  height: 12vh;
+  margin: 0 8vw;
+  min-height: 15vh;
 }
 .nav-div header {
-  margin: 2% 0;
+  margin: 2vh 0 0 0;
+  min-height: 10vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -221,8 +221,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .nav-div header .name-title-wrapper {
-  width: 30%;
-  margin-right: 12%;
+  width: 30vw;
+  margin-right: 12vw;
 }
 @media only screen and (max-width: 800px) {
   .nav-div header .name-title-wrapper {
@@ -251,19 +251,14 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 800px) {
   .nav-div header nav {
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 }
 .nav-div header nav a {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   text-decoration: none;
-}
-@media only screen and (max-width: 800px) {
-  .nav-div header nav a {
-    font-size: 1.5rem;
-  }
 }
 .player-wrapper-home {
   height: auto;
@@ -393,7 +388,23 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
   }
 }
-.home-container .gear ul {
+.home-container .gear .gear-list-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .home-container .gear .gear-list-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home-container .gear .gear-list-flex ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -403,7 +414,7 @@ body::-webkit-scrollbar-thumb {
   height: 175px;
 }
 @media only screen and (max-width: 1000px) {
-  .home-container .gear ul {
+  .home-container .gear .gear-list-flex ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -412,9 +423,10 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
   }
 }
-.home-container .gear ul li {
+.home-container .gear .gear-list-flex ul li {
   margin: 1% 0;
   font-size: 110%;
+  line-height: 1.5rem;
 }
 .player-wrapper {
   display: flex;
@@ -441,7 +453,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   width: 100%;
   min-height: 65vh;
-  margin: 6% 0;
+  margin: 2% 0 3% 0;
 }
 @media only screen and (max-width: 1000px) {
   .bts-container {
@@ -490,7 +502,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .bts-container .bts-content-container .bts-pics img {
-  width: 200px;
+  width: 150px;
   height: auto;
   max-height: 400px;
   object-fit: cover;
@@ -516,11 +528,11 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 .contact-container {
-  min-height: 64vh;
+  min-height: 70vh;
 }
 .contact-container form {
   padding: 2em;
-  margin: 1% 0;
+  margin: 1vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -529,7 +541,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-container form input {
   width: 50%;
-  margin: 1% 0;
+  margin: 1vh 0;
   min-height: 3em;
 }
 @media only screen and (max-width: 1200px) {
@@ -539,7 +551,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-container form textarea {
   width: 50%;
-  margin: 2% 0;
+  margin: 2vh 0;
   min-height: 8em;
 }
 @media only screen and (max-width: 1200px) {
@@ -550,8 +562,19 @@ body::-webkit-scrollbar-thumb {
 .contact-container form button {
   background-color: white;
   width: 20%;
-  min-height: 3em;
-  margin: 1% 0;
+  min-height: 5vh;
+  margin: 1vh 0;
+}
+.contact-container .social-icons {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .social-icons a {
+  margin: 0 3vw;
 }
 .footer-container {
   border-top: 1px solid white;
@@ -562,7 +585,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   position: static;
   width: 100%;
-  height: 12vh;
+  height: 15vh;
   bottom: 0;
 }
 .footer-container .footer-sections {
@@ -572,14 +595,14 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0.5%;
+  margin: 0.75vh 0.5vw 0.75vh 0.5vw;
 }
 .footer-container .footer-sections p {
   font-size: 1rem;
-  margin-bottom: 0.5%;
+  margin-bottom: 1vh;
 }
 .footer-container .footer-sections .social-icons {
-  width: 25%;
+  width: 25vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -598,10 +621,8 @@ body::-webkit-scrollbar-thumb {
   width: 98vw;
   height: 98vh;
   box-shadow: 1px 1px 1px black;
-  left: 1%;
-  top: 1%;
-  bottom: auto;
-  right: auto;
+  left: 1vw;
+  top: 1vh;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
@@ -609,8 +630,8 @@ body::-webkit-scrollbar-thumb {
   .modal {
     max-width: 99vw;
     max-height: 94vh;
-    left: 0;
-    top: 2%;
+    left: 1vw;
+    top: 2vh;
   }
 }
 .modal p {

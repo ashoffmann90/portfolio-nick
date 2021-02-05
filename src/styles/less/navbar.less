@@ -1,10 +1,10 @@
 .nav-div {
-    margin: 0 8%;
-    margin-bottom: 4%;
-    height: 12vh;
+    margin: 0 8vw;
+    min-height: 15vh;
 
     header {
-        margin: 2% 0;
+        margin: 2vh 0 0 0;
+        min-height: 10vh;
         .flex(@justify: space-between, @align: baseline);
 
         @media only screen and (max-width: 800px) {
@@ -12,8 +12,8 @@
         }
 
         .name-title-wrapper {
-            width: 30%;
-            margin-right: 12%;
+            width: 30vw;
+            margin-right: 12vw;
 
             @media only screen and (max-width: 800px) {
                 width: 75%;
@@ -37,18 +37,14 @@
 
             @media only screen and (max-width: 800px) {
                 width: 100%;
-                margin-top: 5%;
-                margin-bottom: 3%;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
             }
 
             a {
                 letter-spacing: 0.1rem;
                 font-size: 1.5rem;
                 text-decoration: none;
-
-                @media only screen and (max-width: 800px) {
-                    font-size: 1.5rem;
-                }
             }
         }
     }

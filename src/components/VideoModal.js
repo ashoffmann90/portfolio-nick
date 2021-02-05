@@ -8,7 +8,7 @@ function VideoModal({ children, show, modalHandler }) {
             <div
                 className="modal"
                 style={{
-                    margin: '0 0',
+                    margin: '0 auto',
                     transform: show ? 'translateY(0)' : 'translateY(-100vh)',
                     opactiy: show ? 1 : 0,
                 }}
