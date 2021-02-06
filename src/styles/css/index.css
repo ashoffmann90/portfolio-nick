@@ -316,7 +316,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 130px;
     height: 15%;
     min-height: 22px;
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 .player-wrapper-home video {
