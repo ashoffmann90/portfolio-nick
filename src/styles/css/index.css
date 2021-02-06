@@ -288,19 +288,36 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .player-wrapper-home .overlay-box h2 {
-  font-size: 300%;
+  font-size: 250%;
   margin: 3% 5%;
+}
+@media only screen and (max-width: 600px) {
+  .player-wrapper-home .overlay-box h2 {
+    font-size: 150%;
+  }
 }
 .player-wrapper-home .overlay-box .reel-button {
   margin: 0 5%;
-  width: 17%;
-  min-width: 60px;
-  height: 3rem;
+  width: 20%;
+  min-width: 100px;
+  max-width: 130px;
+  height: 20%;
+  min-height: 40px;
   background-color: white;
   border: none;
   font-family: 'Basicaline', 'Big Shoulders Text', 'Arial';
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 175%;
+}
+@media only screen and (max-width: 600px) {
+  .player-wrapper-home .overlay-box .reel-button {
+    width: 20%;
+    min-width: 75px;
+    max-width: 130px;
+    height: 20%;
+    min-height: 30px;
+    font-size: 100%;
+  }
 }
 .player-wrapper-home video {
   object-fit: cover;
@@ -489,6 +506,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 100%;
 }
 @media only screen and (max-width: 1000px) {
@@ -548,7 +566,14 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .bts-container .bts-content-container .bts-vids .react-player-div {
+    width: 100%;
+  }
 }
 .contact-container {
   min-height: 70vh;
