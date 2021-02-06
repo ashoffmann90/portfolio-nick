@@ -1,18 +1,17 @@
 .contact-container {
-    min-height: 70vh;
+    min-height: 70%;
 
     form {
-        padding: 2em;
-        margin: 1vh 0 0 0;
+        margin: 1% 0 0 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 390px;
+        min-height: 55%;
 
         input {
             width: 50%;
-            margin: 1vh 0;
+            margin: 1% 0;
             min-height: 3em;
 
             @media only screen and (max-width: 1200px) {
@@ -22,7 +21,7 @@
 
         textarea {
             width: 50%;
-            margin: 2vh 0;
+            margin: 2% 0;
             min-height: 8em;
 
             @media only screen and (max-width: 1200px) {
@@ -33,11 +32,17 @@
         button {
             background-color: white;
             width: 20%;
-            min-height: 5vh;
-            margin: 1vh 0 0 0;
+            max-width: 175px;
+            min-height: 2em;
+            margin: 1% 0 2% 0;
+
+            @media only screen and (max-width: 1200px) {
+                margin: 1% 0 5% 0;
+            }
         }
     }
     .social-icons {
+        margin: 0 0 10% 0;
         width: 100%;
         .flex(row, nowrap, center, align);
 

@@ -283,8 +283,8 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 900px) {
   .player-wrapper-home .overlay-box {
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 6%;
   }
 }
 .player-wrapper-home .overlay-box h2 {
@@ -293,7 +293,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 600px) {
   .player-wrapper-home .overlay-box h2 {
-    font-size: 150%;
+    font-size: 125%;
   }
 }
 .player-wrapper-home .overlay-box .reel-button {
@@ -315,8 +315,8 @@ body::-webkit-scrollbar-thumb {
     min-width: 60px;
     max-width: 130px;
     height: 15%;
-    min-height: 25px;
-    font-size: 100%;
+    min-height: 20px;
+    font-size: 90%;
   }
 }
 .player-wrapper-home video {
@@ -576,20 +576,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .contact-container {
-  min-height: 70vh;
+  min-height: 70%;
 }
 .contact-container form {
-  padding: 2em;
-  margin: 1vh 0 0 0;
+  margin: 1% 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 390px;
+  min-height: 55%;
 }
 .contact-container form input {
   width: 50%;
-  margin: 1vh 0;
+  margin: 1% 0;
   min-height: 3em;
 }
 @media only screen and (max-width: 1200px) {
@@ -599,7 +598,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-container form textarea {
   width: 50%;
-  margin: 2vh 0;
+  margin: 2% 0;
   min-height: 8em;
 }
 @media only screen and (max-width: 1200px) {
@@ -610,10 +609,17 @@ body::-webkit-scrollbar-thumb {
 .contact-container form button {
   background-color: white;
   width: 20%;
-  min-height: 5vh;
-  margin: 1vh 0 0 0;
+  max-width: 175px;
+  min-height: 2em;
+  margin: 1% 0 2% 0;
+}
+@media only screen and (max-width: 1200px) {
+  .contact-container form button {
+    margin: 1% 0 5% 0;
+  }
 }
 .contact-container .social-icons {
+  margin: 0 0 10% 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -643,7 +649,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
+  margin: 3px 0 0 0;
 }
 .footer-container .footer-sections p {
   font-size: 1rem;
