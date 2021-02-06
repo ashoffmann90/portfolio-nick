@@ -95,7 +95,8 @@ function BehindTheScenes() {
                     className="react-player"
                     url={url}
                     controls={true}
-                    width="100%"
+                    width="350px"
+                    height="350px"
                 />
             </div>
         )
