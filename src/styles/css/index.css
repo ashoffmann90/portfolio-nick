@@ -312,11 +312,11 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 600px) {
   .player-wrapper-home .overlay-box .reel-button {
     width: 20%;
-    min-width: 60px;
+    min-width: 63px;
     max-width: 130px;
     height: 15%;
-    min-height: 20px;
-    font-size: 90%;
+    min-height: 22px;
+    font-size: 80%;
   }
 }
 .player-wrapper-home video {
