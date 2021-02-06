@@ -300,7 +300,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 5%;
   width: 20%;
   min-width: 100px;
-  max-width: 130px;
+  max-width: 115px;
   height: 20%;
   min-height: 40px;
   background-color: white;
@@ -312,10 +312,10 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 600px) {
   .player-wrapper-home .overlay-box .reel-button {
     width: 20%;
-    min-width: 75px;
+    min-width: 60px;
     max-width: 130px;
-    height: 20%;
-    min-height: 30px;
+    height: 15%;
+    min-height: 25px;
     font-size: 100%;
   }
 }
