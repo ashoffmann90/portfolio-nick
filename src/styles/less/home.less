@@ -19,20 +19,35 @@
         }
 
         h2 {
-            font-size: 300%;
+            font-size: 250%;
             margin: 3% 5%;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 150%;
+            }
         }
 
         .reel-button {
             margin: 0 5%;
-            width: 17%;
-            min-width: 60px;
-            height: 3rem;
+            width: 20%;
+            min-width: 100px;
+            max-width: 130px;
+            height: 20%;
+            min-height: 40px;
             background-color: white;
             border: none;
             font-family: @header-font;
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 175%;
+
+            @media only screen and (max-width: 600px) {
+                width: 20%;
+                min-width: 75px;
+                max-width: 130px;
+                height: 20%;
+                min-height: 30px;
+                font-size: 100%;
+            }
         }
     }
 

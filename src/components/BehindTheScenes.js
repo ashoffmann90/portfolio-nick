@@ -95,8 +95,8 @@ function BehindTheScenes() {
                     className="react-player"
                     url={url}
                     controls={true}
-                    width="350px"
-                    height="350px"
+                    width="100%"
+                    // height="100%"
                 />
             </div>
         )
@@ -190,7 +190,6 @@ function BehindTheScenes() {
                     />
                 </div>
             </div>
-            )
         </div>
     )
 }
