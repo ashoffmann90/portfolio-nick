@@ -82,7 +82,7 @@ function Contact() {
                 <button type="submit">Submit</button>
             </form>
             <div className="social-icons">
-                <a href="https://www.instagram.com/nick__almanza/">
+                <a href="https://www.instagram.com/the.nick.almanza/">
                     <i className="fab fa-instagram fa-2x"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/steadi-nick-almanza/">
