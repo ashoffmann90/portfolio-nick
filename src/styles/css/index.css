@@ -262,6 +262,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   text-decoration: none;
 }
+.nav-div header nav a:hover {
+  text-decoration: underline solid white;
+  text-decoration-thickness: 0.075em;
+}
 .player-wrapper-home {
   height: auto;
   width: 100%;
