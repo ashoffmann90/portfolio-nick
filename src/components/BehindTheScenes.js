@@ -51,7 +51,8 @@ function BehindTheScenes() {
 
     const imgResponsive = {
         0: { items: 2 },
-        530: { items: 3 },
+        430: { items: 3 },
+        570: { items: 4 },
         700: { items: 4 },
         950: { items: 4 },
     }
@@ -96,7 +97,6 @@ function BehindTheScenes() {
                     url={url}
                     controls={true}
                     width="100%"
-                    // height="100%"
                 />
             </div>
         )
@@ -112,7 +112,8 @@ function BehindTheScenes() {
                         mouseTracking
                         touchTracking
                         infinite
-                        animationDuration={800}
+                        animationType="fadeout"
+                        animationDuration={400}
                         activeIndex={photoIndex - 1}
                         items={picItems}
                         responsive={imgResponsive}

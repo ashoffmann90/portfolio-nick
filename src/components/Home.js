@@ -52,7 +52,7 @@ function Home() {
                     playing={pause ? true : false}
                     width="100%"
                     height="100%"
-                    volume={0.5}
+                    volume={1}
                     muted={false}
                 />
             </VideoModal>

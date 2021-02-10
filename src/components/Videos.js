@@ -4,16 +4,16 @@ import ReactPlayer from 'react-player'
 function Videos() {
     const videos = [
         {
+            artist: 'Inayah',
+            url: 'https://youtu.be/xdzwEaIKo9M',
+        },
+        {
             artist: 'Remi Wolf',
             url: 'https://youtu.be/qKKGjnqKUqw',
         },
         {
             artist: 'Saint Jhn',
             url: 'https://youtu.be/pDsas5WHPXk',
-        },
-        {
-            artist: 'Amber Riley',
-            url: 'https://youtu.be/q2mdhTCZch8',
         },
         {
             artist: 'Jojo',
@@ -34,6 +34,10 @@ function Videos() {
         {
             artist: 'Vel the Wonder',
             url: 'https://youtu.be/lcQPskvkG9k',
+        },
+        {
+            artist: 'Amber Riley',
+            url: 'https://youtu.be/q2mdhTCZch8',
         },
         {
             artist: 'Dirty Honey',

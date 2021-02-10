@@ -8,13 +8,25 @@ function Footer() {
                     <i className="far fa-copyright fa-md"></i> 2021
                 </p>
                 <p>Website Created by:</p>
-                <p>Andrew Hoffmann</p>
+                <a href="https://www.linkedin.com/in/ashoffmann90/">
+                    <p>Andrew Hoffmann</p>
+                </a>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/ashoffmann90/">
-                        <i className="fab fa-linkedin fa-lg"></i>
+                        <div className="soc-icon">
+                            <img
+                                src="https://nick-portfolio.s3-us-west-2.amazonaws.com/iconfinder_Rounded_Linkedin2_svg_5282542.png"
+                                alt="LinkedIn profile for Andrew Hoffmann"
+                            />
+                        </div>
                     </a>
                     <a href="https://github.com/ashoffmann90">
-                        <i className="fab fa-github fa-lg"></i>
+                        <div className="soc-icon">
+                            <img
+                                src="https://nick-portfolio.s3-us-west-2.amazonaws.com/iconfinder_Group_4747499.png"
+                                alt="GitHub profile for Andrew Hoffmann"
+                            />
+                        </div>
                     </a>
                 </div>
             </div>

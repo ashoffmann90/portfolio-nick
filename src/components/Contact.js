@@ -83,10 +83,20 @@ function Contact() {
             </form>
             <div className="social-icons">
                 <a href="https://www.instagram.com/the.nick.almanza/">
-                    <i className="fab fa-instagram fa-2x"></i>
+                    <div className="soc-icon">
+                        <img
+                            src="https://nick-portfolio.s3-us-west-2.amazonaws.com/iconfinder_Rounded_Instagram_svg_5282544.png"
+                            alt="Instagram profile for Nick Almanza"
+                        />
+                    </div>
                 </a>
                 <a href="https://www.linkedin.com/in/steadi-nick-almanza/">
-                    <i className="fab fa-linkedin fa-2x"></i>
+                    <div className="soc-icon">
+                        <img
+                            src="https://nick-portfolio.s3-us-west-2.amazonaws.com/iconfinder_Rounded_Linkedin2_svg_5282542.png"
+                            alt="LinkedIn profile for Nick Almanza"
+                        />
+                    </div>
                 </a>
             </div>
         </div>
