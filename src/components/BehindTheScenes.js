@@ -50,11 +50,12 @@ function BehindTheScenes() {
     const [windowSize, setWindowSize] = useState(window.innerWidth)
 
     const imgResponsive = {
-        0: { items: 2 },
-        430: { items: 3 },
-        570: { items: 4 },
-        700: { items: 4 },
-        950: { items: 4 },
+        0: { items: 3 },
+        450: { items: 4 },
+        560: { items: 5 },
+        675: { items: 6 },
+        745: { items: 7 },
+        950: { items: 8 },
     }
 
     const responsive = {

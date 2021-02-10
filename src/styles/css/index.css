@@ -531,10 +531,10 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: align;
   margin-bottom: 5vh;
-  width: 80%;
+  width: 70%;
   max-height: 50%;
 }
 @media only screen and (max-width: 1000px) {
@@ -543,17 +543,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .bts-container .bts-content-container .bts-pics img {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   max-height: 400px;
   object-fit: cover;
-  margin: 0 0 2%;
-}
-@media only screen and (max-width: 400px) {
-  .bts-container .bts-content-container .bts-pics img {
-    width: 125px;
-    height: 125px;
-  }
+  margin: 0 0.5% 2%;
 }
 .bts-container .bts-content-container .bts-vids {
   display: flex;
