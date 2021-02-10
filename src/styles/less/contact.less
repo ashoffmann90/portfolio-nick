@@ -42,12 +42,26 @@
         }
     }
     .social-icons {
-        margin: 0 0 10% 0;
-        width: 100%;
+        margin: 0 auto 10% auto;
+        width: 50%;
         .flex(row, nowrap, center, align);
 
         a {
+            .flex(column, nowrap, center, center);
             margin: 0 3%;
+            text-decoration: none;
+
+            .soc-icon {
+                max-width: 50%;
+
+                img {
+                    object-fit: scale-down;
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    background-color: white;
+                }
+            }
         }
     }
 }
