@@ -51,12 +51,12 @@ var styles = {
 }
 
 function NavBar() {
-    const [mobile, setMobile] = useState()
-    window.addEventListener('resize', () => setMobile(window.innerWidth))
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
+    window.addEventListener('resize', () => setWindowSize(window.innerWidth))
     return (
         <div className="nav-div">
             <header>
-                {mobile >= 480 ? (
+                {windowSize >= 480 ? (
                     <>
                         <div className="name-title-wrapper">
                             <NavLink to="/">
