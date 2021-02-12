@@ -221,6 +221,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
   }
 }
+@media only screen and (max-width: 480px) {
+  .nav-div header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .nav-div header .name-title-wrapper {
   width: 30vw;
   margin-right: 12vw;
@@ -257,6 +266,15 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 3vh;
   }
 }
+@media only screen and (max-width: 480px) {
+  .nav-div header nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .nav-div header nav a {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
@@ -264,7 +282,7 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-div header nav a:hover {
   text-decoration: underline solid white;
-  text-decoration-thickness: 0.075em;
+  text-decoration-thickness: 0.1em;
 }
 .player-wrapper-home {
   height: auto;
