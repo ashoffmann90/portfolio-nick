@@ -15,7 +15,7 @@ var styles = {
         background: 'white',
     },
     bmBurgerBarsHover: {
-        background: '#a90000',
+        // background: '#a90000',
     },
     // bmCrossButton: {
     //     height: '24px',
@@ -28,22 +28,23 @@ var styles = {
         zIndex: '25',
         position: 'fixed',
         width: '30%',
-        height: '30%',
+        height: '50%',
     },
     bmMenu: {
         background: 'rgba(0, 0, 0, 0.5)',
-        padding: '1em',
+        padding: '2em',
         fontSize: '1em',
     },
     // bmMorphShape: {
     //     fill: '#373a47',
     // },
     bmItemList: {
-        color: '#b8b7ad',
-        padding: '0.8em',
+        // color: '#b8b7ad',
+        // padding: '0.8em',
     },
     bmItem: {
         display: 'inline-block',
+        outline: 'none',
     },
     bmOverlay: {
         background: 'rgba(0, 0, 0, 0.0)',
@@ -52,7 +53,16 @@ var styles = {
 
 function NavBar() {
     const [windowSize, setWindowSize] = useState(window.innerWidth)
+    const [menuOpen, setMenuOpen] = useState(false)
     window.addEventListener('resize', () => setWindowSize(window.innerWidth))
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+    const stateChangeHandler = (newState) => {
+        setMenuOpen(newState.isOpen)
+    }
+
     return (
         <div className="nav-div">
             <header>
@@ -83,11 +93,24 @@ function NavBar() {
                                 />
                             </NavLink>
                         </div>
-                        <Menu right styles={styles}>
-                            <NavLink to="/">Home</NavLink>
-                            <NavLink to="/videos">Videos</NavLink>
-                            <NavLink to="/bts">BTS</NavLink>
-                            <NavLink to="/contact">Contact</NavLink>
+                        <Menu
+                            right
+                            isOpen={menuOpen}
+                            onStateChange={(state) => stateChangeHandler(state)}
+                            styles={styles}
+                        >
+                            <NavLink to="/" onClick={toggleMenu}>
+                                Home
+                            </NavLink>
+                            <NavLink to="/videos" onClick={toggleMenu}>
+                                Videos
+                            </NavLink>
+                            <NavLink to="/bts" onClick={toggleMenu}>
+                                BTS
+                            </NavLink>
+                            <NavLink to="/contact" onClick={toggleMenu}>
+                                Contact
+                            </NavLink>
                         </Menu>
                     </>
                 )}
