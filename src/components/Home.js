@@ -95,12 +95,18 @@ function Home() {
                             <br />
                             His work as an operator has been featured on Jimmy
                             Fallon, Stephen Colbert, Good Morning America, the
-                            Ellen Show and The Today Show. He looks forward to
-                            continually growing in the industry and building
-                            relationships with each new production he meets
-                            along the way! Feel free to navigate towards the
-                            “Contact” page for any inquiries to get your project
-                            started!
+                            Ellen Show and The Today Show. These opportunities
+                            allowed him to work with several talented
+                            individuals and he looks forward to building
+                            relationships several more as he meets each new
+                            production along the way!
+                            <br />
+                            <br />
+                            He’s available to work narratives, commercials, or
+                            music videos and would be happy to answer any of
+                            your questions. Feel free to navigate towards the
+                            “Contact” Page for rates, availability or any
+                            inquiries to get your project started!
                         </p>
                     </div>
                 </div>
