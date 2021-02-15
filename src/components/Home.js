@@ -97,9 +97,9 @@ function Home() {
                             Fallon, Stephen Colbert, Good Morning America, the
                             Ellen Show and The Today Show. These opportunities
                             allowed him to work with several talented
-                            individuals and he looks forward to building
-                            relationships several more as he meets each new
-                            production along the way!
+                            individuals and he looks forward to building several
+                            more relationships as he meets each new production
+                            along the way!
                             <br />
                             <br />
                             He’s available to work narratives, commercials, or
