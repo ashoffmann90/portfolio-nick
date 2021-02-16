@@ -95,15 +95,14 @@ function Home() {
                             <br />
                             His work as an operator has been featured on Jimmy
                             Fallon, Stephen Colbert, Good Morning America, the
-                            Ellen Show and The Today Show. These opportunities
-                            allowed him to work with several talented
-                            individuals and he looks forward to building several
-                            more relationships as he meets each new production
-                            along the way!
+                            Ellen Show and The Today Show. He looks forward to
+                            building relationships with each new production he
+                            meets along the way and the talented individuals
+                            that are a part of them.
                             <br />
                             <br />
-                            He’s available to work narratives, commercials, or
-                            music videos and would be happy to answer any of
+                            Nick is available to work narratives, commercials,
+                            or music videos and would be happy to answer any of
                             your questions. Feel free to navigate towards the
                             “Contact” Page for rates, availability or any
                             inquiries to get your project started!
