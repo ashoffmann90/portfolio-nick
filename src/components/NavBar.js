@@ -17,13 +17,6 @@ var styles = {
     bmBurgerBarsHover: {
         // background: '#a90000',
     },
-    // bmCrossButton: {
-    //     height: '24px',
-    //     width: '24px',
-    // },
-    // bmCross: {
-    //     background: '#bdc3c7',
-    // },
     bmMenuWrap: {
         zIndex: '25',
         position: 'fixed',
@@ -34,13 +27,6 @@ var styles = {
         background: 'rgba(0, 0, 0, 0.5)',
         padding: '2em',
         fontSize: '1em',
-    },
-    // bmMorphShape: {
-    //     fill: '#373a47',
-    // },
-    bmItemList: {
-        // color: '#b8b7ad',
-        // padding: '0.8em',
     },
     bmItem: {
         display: 'inline-block',
