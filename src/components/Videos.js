@@ -4,6 +4,14 @@ import ReactPlayer from 'react-player'
 function Videos() {
     const videos = [
         {
+            artist: 'Lizzy Small',
+            url: 'https://youtu.be/wn97IF3-Im4',
+        },
+        {
+            artist: 'Cochise',
+            url: 'https://youtu.be/FGZMQam5AEM',
+        },
+        {
             artist: 'Ayron Jones',
             url: 'https://youtu.be/wB593WIQ674',
         },
