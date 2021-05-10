@@ -17,11 +17,6 @@ function Contact() {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        setForm({
-            name: '',
-            email: '',
-            message: '',
-        })
         const { name, email, message } = form
 
         const template = {
@@ -47,6 +42,11 @@ function Contact() {
                     console.log('FAILED...', error)
                 }
             )
+        setForm({
+            name: '',
+            email: '',
+            message: '',
+        })
     }
 
     return (
