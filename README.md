@@ -1,6 +1,4 @@
-# Human Rights First - Police Incident Report
-
-You can find the deployed project at [Police Use of Force Tracker](https://a.humanrightsfirst.dev/).
+# Nick Almanza Portfolio
 
 ## Contributors
 
@@ -15,7 +13,6 @@ You can find the deployed project at [Police Use of Force Tracker](https://a.hum
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![React](https://img.shields.io/badge/react-v16.7.0--alpha.2-blue.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Ant Design](https://img.shields.io/badge/design%20system-ant--design-yellowgreen)](https://ant.design/docs/react/introduce)
 [![ESLint](https://img.shields.io/badge/linter-eslint-orange)](https://eslint.org/)
 
 ## Project Overview

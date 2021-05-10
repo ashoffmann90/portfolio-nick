@@ -18,13 +18,13 @@ function Contact() {
     const onSubmit = (e) => {
         e.preventDefault()
         const { name, email, message } = form
-
         const template = {
             name: name,
             email: email,
             message: message,
         }
 
+        console.log(template)
         emailjs
             .send(
                 'service_2h9efny',
