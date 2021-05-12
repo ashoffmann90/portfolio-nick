@@ -17,12 +17,7 @@
 
 ## Project Overview
 
-[Trello Board](https://trello.com/b/f5IBtPhV/labs25hrfbrannan)
-
-[Product Canvas](https://whimsical.com/4Gg7cNjtFfmcAXKDpRu8oJ)
-
-Single page application that maps police brutality based on scraping data from Twitter and Reddit. It includes a timeline view, visual
-map and feed page. Intended for journalists, activists and lawyers.
+Portfolio website created by Andrew Hoffmann, for Nick Almanza to display projects that he has worked on and to allow 
 
 ### Key Features
 
