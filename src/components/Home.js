@@ -77,7 +77,7 @@ function Home() {
                     <div className="portrait-margin">
                         <div className="self-portrait">
                             <img
-                                src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Self+Portrait.jpg"
+                                src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Nick+Profile+Pic.jpg"
                                 alt="Self portrait of Nick Almanza"
                             />
                         </div>
