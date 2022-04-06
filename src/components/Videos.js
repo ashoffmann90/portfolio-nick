@@ -24,20 +24,20 @@ function Videos() {
             url: 'https://youtu.be/xdzwEaIKo9M',
         },
         {
-            artist: 'Remi Wolf',
-            url: 'https://youtu.be/qKKGjnqKUqw',
+            artist: 'Muni Long',
+            url: 'https://youtu.be/szuAq2v9TSI',
         },
         {
-            artist: 'Saint Jhn',
-            url: 'https://youtu.be/pDsas5WHPXk',
+            artist: 'Woosung',
+            url: 'https://youtu.be/3YFZyOpF7tU',
         },
         {
             artist: 'Jojo',
             url: 'https://youtu.be/ZlAayK06ofY',
         },
         {
-            artist: 'Leslie Odom Jr.',
-            url: 'https://youtu.be/weImyhyu_vE',
+            artist: 'The Game & Blaneoh',
+            url: 'https://youtu.be/XpW4pNvY0bs',
         },
         {
             artist: 'Dirty Honey',
