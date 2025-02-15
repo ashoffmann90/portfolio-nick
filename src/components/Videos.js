@@ -92,7 +92,7 @@ function Videos() {
                     volume={1}
                     muted={false}
                     width="30%"
-                    height="24vh"
+                    height="30vh"
                 />
             ))}
         </div>
