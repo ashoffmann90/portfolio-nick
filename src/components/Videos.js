@@ -64,10 +64,6 @@ function Videos() {
             url: 'https://youtu.be/s-HuzExvQO8',
         },
         {
-            artist: 'Mack Keane',
-            url: 'https://youtu.be/1tdlfJBnRIY',
-        },
-        {
             artist: 'Say Grace',
             url: 'https://youtu.be/5WnU4G4LL3E',
         },
@@ -83,10 +79,6 @@ function Videos() {
             artist: 'Symba',
             url: 'https://youtu.be/djpDAHiaoy0',
         },
-        {
-            artist: 'Mack Keane',
-            url: 'https://youtu.be/yA_MX6aUq7o',
-        },
     ]
 
     return (
@@ -100,7 +92,7 @@ function Videos() {
                     volume={1}
                     muted={false}
                     width="30%"
-                    height="30vh"
+                    height="24vh"
                 />
             ))}
         </div>

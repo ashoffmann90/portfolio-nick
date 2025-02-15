@@ -17,7 +17,7 @@
 
 ## Project Overview
 
-Portfolio website created by Andrew Hoffmann, for Nick Almanza to display projects that he has worked on and to allow 
+Portfolio website created by Andrew Hoffmann, for Nick Almanza to display projects that he has worked on. 
 
 # Contributing
 

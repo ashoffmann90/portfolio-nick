@@ -5,7 +5,7 @@ function Footer() {
         <div className="footer-container">
             <div className="footer-sections">
                 <p>
-                    <i className="far fa-copyright fa-md"></i> 2021
+                    <i className="far fa-copyright fa-md"></i> 2025
                 </p>
                 <p>Website Created by:</p>
                 <a href="https://www.linkedin.com/in/ashoffmann90/">

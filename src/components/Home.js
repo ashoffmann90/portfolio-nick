@@ -5,15 +5,19 @@ import ReactPlayer from 'react-player'
 function Home() {
     // Specific Order
     const gearList = [
-        'GPI Pro Sled (Cine Live)',
+        'GPI Pro Sled (w/Volt)',
         'Tiffen Exovest',
-        'Sachtler/Artemis Arm (57lbs Max Load)',
-        'SmallHD 703 Ultrabright Monitor',
+        'Sachtler/Artemis Arm (70lbs Max Load)',
+        'SmallHD 703 Monitor',
+        'Blackmagic 5” Monitor/Recorder',
+        'Steadicam Stand w/Casters',
     ]
 
     const gearList2 = [
         'Gold Mount Batteries (x6)',
         'Sony L-Series Batteries (x4)',
+        'Low Mode Bracket',
+        'S.O.S. Plate',
         'Decimator MD-LX HDMI/SDI Converter',
         'Misc. Video/Power Cables',
     ]
@@ -74,39 +78,47 @@ function Home() {
 
             <div className="home-container">
                 <div className="me">
-                    <div className="portrait-margin">
-                        <div className="self-portrait">
-                            <img
-                                src="https://nick-portfolio.s3-us-west-2.amazonaws.com/Nick+Profile+Pic.jpg"
-                                alt="Self portrait of Nick Almanza"
-                            />
-                        </div>
+                    <div className="self-portrait">
+                        <img
+                            src="https://nick-portfolio.s3.us-west-2.amazonaws.com/nick-profile-2-25.jpg"
+                            alt="Self portrait of Nick Almanza"
+                        />
                     </div>
 
                     <div className="bio">
                         <h2>Bio</h2>
 
-                        <p>
-                            Nick currently resides in Los Angeles where he
-                            graduated from California State University
-                            Northridge with a degree in Cinema and Television
-                            Arts.
-                            <br />
-                            <br />
-                            His work as an operator has been featured on Jimmy
-                            Fallon, Stephen Colbert, Good Morning America, the
-                            Ellen Show and The Today Show. He looks forward to
-                            building relationships with each new production he
-                            meets along the way and the talented individuals
-                            that are a part of them.
-                            <br />
-                            <br />
-                            Nick is available to work narratives, commercials,
-                            or music videos and would be happy to answer any of
-                            your questions. Feel free to navigate towards the
-                            “Contact” Page for rates, availability or any
-                            inquiries to get your project started!
-                        </p>
+                        <div className='bio-text-div'>
+                            <p>
+                                Nick currently resides in Los Angeles where he
+                                graduated from California State University
+                                Northridge with a degree in Cinema and
+                                Television Arts.
+                                <br />
+                                <br />
+                                His work as an operator has been featured on
+                                Jimmy Fallon, Stephen Colbert, Good Morning
+                                America, the Ellen Show and The Today Show.
+                                Besides live television, Nick was able to
+                                finally achieve his dream of working in the film
+                                industry when he was given the opportunity to
+                                work with Lifetime and a small handful of
+                                independent movies. But the dream continues to
+                                grow as does his passion for filmmaking in the
+                                pursuit of more challenging projects. However,
+                                what stands our more to him are the talented
+                                individuals he gets to meet along the way!
+                                <br />
+                                <br />
+                                Nick is local to Los Angeles but that hasn’t
+                                stopped him from working across borders or
+                                overseas. The range of projects that he works on
+                                span from narratives to commercials as well as
+                                music videos. So feel free to navigate towards
+                                the “Contact” page for rates, availability or
+                                any inquiries to get your project started!
+                            </p>
+                        </div>
                     </div>
                 </div>
 

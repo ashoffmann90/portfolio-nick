@@ -8,15 +8,15 @@
         .flex(column, nowrap, center, flex-start);
         position: absolute;
         top: 10%;
-        left: 10%;
+        left: 6%;
         width: 50%;
         height: auto;
         z-index: 1;
 
-        @media only screen and (max-width: 900px) {
-            top: 10%;
-            left: 6%;
-        }
+        // @media only screen and (max-width: 900px) {
+        //     top: 10%;
+        //     left: 6%;
+        // }
 
         h2 {
             font-size: 250%;
@@ -66,58 +66,51 @@
     margin: 0 8%;
 
     .me {
-        .flex(row, nowrap, space-around, flex-start);
+        .flex(row, nowrap, space-between, center);
         color: @font-color;
         padding-bottom: 5%;
         border-bottom: 3px solid @border-color;
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1300px) {
             .flex(column-reverse, nowrap, center, center);
         }
 
-        .portrait-margin {
-            margin-top: 75px;
-
-            @media only screen and (max-width: 900px) {
-                margin-top: 20px;
+        .self-portrait {
+            margin-top: 7.5%;
+            width: 45%;
+            height: auto;
+            
+            @media only screen and (max-width: 1300px) {
+                margin: 5% 0;
+                width: 90%;
             }
 
-            .self-portrait {
-                width: 300px;
+            img {
+                width: 100%;
                 height: auto;
-
-                @media only screen and (max-width: 900px) {
-                    width: 150px;
-                    margin: 2% auto;
-                }
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 5%;
-                }
             }
         }
+        
 
         .bio {
             .flex(direction, wrap, space-between, align);
-            margin: 75px 0 0 2%;
-            width: 63%;
+            width: 45%;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1300px) {
+                margin: 1% 0 0 0;
                 width: 100%;
-                margin: 30px 0 0 2%;
             }
 
             h2 {
-                margin: 0 auto 5% auto;
+                margin: 5% auto 6% auto;
             }
 
-            p {
-                align-self: flex-start;
-                line-height: 1.7rem;
-                margin-top: 3%;
-                margin-bottom: 5%;
+            .bio-text-div {
+
+                p {
+                    align-self: flex-start;
+                    line-height: 1.7rem;
+                }
             }
         }
     }
@@ -148,7 +141,8 @@
             ul {
                 .flex(column, wrap, space-between, center);
                 width: 100%;
-                height: 175px;
+                min-width: 370px;
+                height: 225px;
 
                 @media only screen and (max-width: 1000px) {
                     .flex(column, nowrap, space-between, flex-start);
